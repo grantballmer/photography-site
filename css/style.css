@@ -1,0 +1,93 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans"; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  @media (min-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 1400px) {
+    .container {
+      grid-template-rows: repeat(auto-fill, minmax(350px, 1fr)); } }
+
+.box {
+  min-height: 300px;
+  background-image: url("http://www.emapsworld.com/images/south-korea-admin-map-black-and-white.gif");
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden; }
+  .box:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-image: url("../assets/tiles/bagan_day-med.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: transform .4s .1s ease-in; }
+  .box:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "See Gallery";
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(100%);
+    outline: 1px solid white;
+    outline-offset: -10px;
+    transition: transform .4s .1s ease-in; }
+  .box:hover:after {
+    transform: translateY(0); }
+  .box:hover:before {
+    transform: translateY(-100%); }
+
+.one:before {
+  background-image: url("../assets/tiles/bagan_day-med.jpg"); }
+
+.two:before {
+  background-image: url("../assets/tiles/bagan_night-high.jpg"); }
+
+.three:before {
+  background-image: url("../assets/tiles/gyeong_day-med.jpg"); }
+
+.four:before {
+  background-image: url("../assets/tiles/temple_water-high.jpg"); }
+
+.five:before {
+  background-image: url("../assets/tiles/bali_rice-med.jpg"); }
+
+.six:before {
+  background-image: url("../assets/tiles/bromo-med.jpg"); }
+
+.seven:before {
+  background-image: url("../assets/tiles/dancer_1-med.jpg"); }
+
+.eight:before {
+  background-image: url("../assets/tiles/dancer_2-med.jpg"); }
+
+.nine:before {
+  background-image: url("../assets/tiles/jaipur_sweep-med.jpg"); }
+
+.ten:before {
+  background-image: url("../assets/tiles/komodo_island-med.jpg"); }
+
+.eleven:before {
+  background-image: url("../assets/tiles/orang_1-med.jpg"); }
