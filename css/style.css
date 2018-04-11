@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open sans"; }
+  font-family: "Montserrat"; }
 
 .container {
   width: 100%;
@@ -25,7 +25,11 @@ html, body {
   background-image: url("http://www.emapsworld.com/images/south-korea-admin-map-black-and-white.gif");
   background-size: cover;
   position: relative;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: semi-bold;
+  cursor: pointer; }
   .box:before {
     display: flex;
     justify-content: center;
@@ -37,7 +41,7 @@ html, body {
     background-image: url("../assets/tiles/bagan_day-med.jpg");
     background-size: cover;
     background-position: center;
-    transition: transform .4s .1s ease-in; }
+    transition: transform .25s .1s ease-in; }
   .box:after {
     display: flex;
     justify-content: center;
@@ -53,14 +57,15 @@ html, body {
     transform: translateY(100%);
     outline: 1px solid white;
     outline-offset: -10px;
-    transition: transform .4s .1s ease-in; }
+    transition: transform .25s .1s ease-in; }
   .box:hover:after {
     transform: translateY(0); }
   .box:hover:before {
     transform: translateY(-100%); }
 
 .one:before {
-  background-image: url("../assets/tiles/bagan_day-med.jpg"); }
+  background-image: url("../assets/tiles/bagan_day-med.jpg");
+  content: "Bagan"; }
 
 .two:before {
   background-image: url("../assets/tiles/bagan_night-high.jpg"); }
@@ -91,3 +96,39 @@ html, body {
 
 .eleven:before {
   background-image: url("../assets/tiles/orang_1-med.jpg"); }
+
+.twelve:before {
+  background-image: url("../assets/tiles/bear-med.jpg"); }
+
+.thirteen:before {
+  background-image: url("../assets/tiles/bharatpur_rays-med.jpg"); }
+
+.fourteen:before {
+  background-image: url("../assets/tiles/bundi_city-med.jpg"); }
+
+.fifteen:before {
+  background-image: url("../assets/tiles/bundi_fort-med.jpg"); }
+
+.sixteen:before {
+  background-image: url("../assets/tiles/deer-med.jpg"); }
+
+.seventeen:before {
+  background-image: url("../assets/tiles/jaipur_orange-VH.jpg"); }
+
+.eighteen:before {
+  background-image: url("../assets/tiles/jaipur_sunrise-med.jpg"); }
+
+.nineteen:before {
+  background-image: url("../assets/tiles/kaziranga_best-med.jpg"); }
+
+.twenty:before {
+  background-image: url("../assets/tiles/pushkar_oneHand-med.jpg"); }
+
+.twentyOne:before {
+  background-image: url("../assets/tiles/taj-med.jpg"); }
+
+.twentyTwo:before {
+  background-image: url("../assets/tiles/kaziranga_head-med.jpg"); }
+
+.twentyThree:before {
+  background-image: url("../assets/tiles/varanasi_1-H.jpg"); }
