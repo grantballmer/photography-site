@@ -51,7 +51,7 @@ html, body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	//grid-template-rows: repeat(auto-fill, minmax(225px, 1fr));
 	@include desktop {
 		grid-template-columns: repeat(4, 1fr);
@@ -66,6 +66,7 @@ html, body {
   min-height: 300px;
   background-image: url("http://www.emapsworld.com/images/south-korea-admin-map-black-and-white.gif");
   background-size: cover;
+	background-position: center;
   position: relative;
   overflow-y: hidden;
 	color: white;
@@ -110,42 +111,151 @@ html, body {
   }
 }
 
-.one:before {
-  background-image: url("../assets/tiles/bagan_day-med.jpg");
+.bagan {
+	background-image: url("../assets/maps/agra.jpg");
+	&:before {
+	background-image: url("../assets/tiles/bagan_night-high.jpg");
 	content: "Bagan";
-
-}
-
-.two {
-	&:before {
-		background-image: url("../assets/tiles/bagan_night-high.jpg");
 	}
 }
 
-.three {
+.seoul {
+	background-image: url("../assets/maps/jaisalmer.jpg");
 	&:before {
-		background-image: url("../assets/tiles/gyeong_day-med.jpg");
+		content: "Seoul";
+		background-image: url("../assets/tiles/namdaemun_edit-med.jpg");
 	}
 }
 
-.four:before {background-image: url("../assets/tiles/temple_water-high.jpg");}
-.five:before {background-image: url("../assets/tiles/bali_rice-med.jpg");}
-.six:before {background-image: url("../assets/tiles/bromo-med.jpg")};
-.seven:before {background-image: url("../assets/tiles/dancer_1-med.jpg")};
-.eight:before {background-image: url("../assets/tiles/dancer_2-med.jpg")};
-.nine:before {background-image: url("../assets/tiles/jaipur_sweep-med.jpg")};
-.ten:before {background-image: url("../assets/tiles/komodo_island-med.jpg")};
-.eleven:before {background-image: url("../assets/tiles/orang_1-med.jpg")};
-.twelve:before {background-image: url("../assets/tiles/bear-med.jpg")};
-.thirteen:before {background-image: url("../assets/tiles/bharatpur_rays-med.jpg")};
-.fourteen:before {background-image: url("../assets/tiles/bundi_city-med.jpg")};
-.fifteen:before {background-image: url("../assets/tiles/bundi_fort-med.jpg")};
-.sixteen:before {background-image: url("../assets/tiles/deer-med.jpg")};
-.seventeen:before {background-image: url("../assets/tiles/jaipur_orange-VH.jpg")};
-.eighteen:before {background-image: url("../assets/tiles/jaipur_sunrise-med.jpg")};
-.nineteen:before {background-image: url("../assets/tiles/kaziranga_best-med.jpg")};
-.twenty:before {background-image: url("../assets/tiles/pushkar_oneHand-med.jpg")};
+.bali {
+	&:before {
+		content: "Bali";	
+		background-image: url("../assets/tiles/dancer-med.jpg");
+	}
+}
+
+.kaziranga {
+	&:before {
+		content: "Kaziranga";
+		background-image: url("../assets/tiles/kaziranga_head3-med.jpg");
+	}
+}
+
+.bharatpur {
+	&:before {
+		content: "Bharatpur";
+		background-image: url("../assets/tiles/bharatpur_rays-med.jpg")
+	}
+}
+
+.bundi {
+	&:before {
+		content: "Bundi";
+		background-image: url("../assets/tiles/bundi_city-med.jpg")
+	}
+}
+
+.pushkar {
+	&:before {
+		background-image: url("../assets/tiles/pushkar_oneHand-med.jpg");
+		content: "Pushkar";
+	}
+}
+
+.varanasi {
+	&:before {
+		content: "Varanasi";
+		background-image: url("../assets/tiles/varanasi_morning3-H.jpg");
+	}
+}
+
+.jaipur {
+	&:before {
+		content: "Jaipur";
+		background-image: url("../assets/tiles/jaipur_sunrise2-med.jpg");
+	}
+}
+
+.sumatra {
+	&:before {
+		content: "Sumatra";
+		background-image: url("../assets/tiles/orang_3-med.jpg");
+	}
+}
+
+.java {
+	&:before {
+		content: "Ranthambore";
+		font-size: 2rem;
+		background-image: url("../assets/tiles/ranthambore_tiger2-med.jpg");
+	}
+}
+.ranthambore {
+	&:before {
+		content: "Ranthambore";
+		font-size: 2rem;
+		background-image: url("../assets/tiles/ranthambore_tiger-med.jpg");
+	}
+}
+
+.agra {
+	&:before {
+		content: "Ranthambore";
+		font-size: 2rem;
+		background-image: url("../assets/tiles/ranthambore_tigercrop-med.jpg");
+	}
+}
+
+.jinhae {
+	&:before {
+		content: "Ranthambore";
+		font-size: 2rem;
+		background-image: url("../assets/tiles/ranthambore_darker-med.jpg");
+	}
+}
+
+.fifteen {
+	&:before {
+		content: "Jodhpur";
+		background-image: url("../assets/tiles/jodhpur_clocktower2-med.jpg");
+	}
+}
+.sixteen { 
+	&:before {
+		content: "Danyang";
+		background-image: url("../assets/tiles/danyang_morning-med.jpg");
+	}
+}
+.seventeen {
+	&:before {
+		content: "Seoraksan";
+		background-image: url("../assets/tiles/seoraksan_edit-med.jpg");
+	}
+}
+
+.eighteen {
+	&:before {
+		content: "Seoraksan";
+		background-image: url("../assets/tiles/seoraksan_fall-med.jpg");
+	}
+}
+
+
+.nineteen {
+	&:before {
+		content: "Komodo";
+		background-image: url("../assets/tiles/padar_island-med.jpg");
+	}
+}
+
+.twenty {
+	&:before {
+		content: "Boseong";
+		background-image: url("../assets/tiles/boseong_greenTeaFields-med.jpg");
+	}
+}
+
 .twentyOne:before {background-image: url("../assets/tiles/taj-med.jpg")};
-.twentyTwo:before {background-image: url("../assets/tiles/kaziranga_head-med.jpg")};
+
 .twentyThree:before {background-image: url("../assets/tiles/varanasi_1-H.jpg")};
 
