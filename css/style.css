@@ -11,7 +11,8 @@ html, body {
 .container {
   width: 100%;
   height: 100%;
-  display: grid; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
   @media (min-width: 1024px) {
     .container {
       grid-template-columns: repeat(4, 1fr); } }
@@ -30,6 +31,9 @@ html, body {
   font-size: 2.5rem;
   font-weight: semi-bold;
   cursor: pointer; }
+  @media (min-width: 1400px) {
+    .box {
+      min-height: 350px; } }
   .box:before {
     display: flex;
     justify-content: center;
@@ -108,51 +112,55 @@ html, body {
   background-image: url("../assets/tiles/orang_3-med.jpg"); }
 
 .java:before {
-  content: "Ranthambore";
-  font-size: 2rem;
-  background-image: url("../assets/tiles/ranthambore_tiger2-med.jpg"); }
+  content: "East Java";
+  background-image: url("../assets/tiles/bromo-med.jpg"); }
 
 .ranthambore:before {
   content: "Ranthambore";
   font-size: 2rem;
-  background-image: url("../assets/tiles/ranthambore_tiger-med.jpg"); }
-
-.agra:before {
-  content: "Ranthambore";
-  font-size: 2rem;
-  background-image: url("../assets/tiles/ranthambore_tigercrop-med.jpg"); }
-
-.jinhae:before {
-  content: "Ranthambore";
-  font-size: 2rem;
   background-image: url("../assets/tiles/ranthambore_darker-med.jpg"); }
 
-.fifteen:before {
+.agra:before {
+  content: "Agra";
+  font-size: 2rem;
+  background-image: url("../assets/tiles/taj-med.jpg"); }
+
+.jinhae:before {
+  content: "Jinhae";
+  background-image: url("../assets/tiles/jinhae_cherryBlossoms-med.jpg"); }
+
+.jodhpur:before {
   content: "Jodhpur";
   background-image: url("../assets/tiles/jodhpur_clocktower2-med.jpg"); }
 
-.sixteen:before {
+.danyang:before {
   content: "Danyang";
   background-image: url("../assets/tiles/danyang_morning-med.jpg"); }
 
-.seventeen:before {
+.seoraksan:before {
   content: "Seoraksan";
   background-image: url("../assets/tiles/seoraksan_edit-med.jpg"); }
 
-.eighteen:before {
-  content: "Seoraksan";
-  background-image: url("../assets/tiles/seoraksan_fall-med.jpg"); }
-
-.nineteen:before {
+.komodo:before {
   content: "Komodo";
   background-image: url("../assets/tiles/padar_island-med.jpg"); }
 
-.twenty:before {
+.boseong:before {
   content: "Boseong";
   background-image: url("../assets/tiles/boseong_greenTeaFields-med.jpg"); }
 
+.twenty:before {
+  content: "Amritsar";
+  background-image: url("../assets/tiles/amritsar_golden_temple2-med.jpg"); }
+
 .twentyOne:before {
-  background-image: url("../assets/tiles/taj-med.jpg"); }
+  content: "Korea";
+  background-image: url("../assets/tiles/korea_nami-med.jpg"); }
+
+.twentyTwo:before {
+  content: "Danyang";
+  background-image: url("../assets/tiles/danyang_landscape-max.jpg"); }
 
 .twentyThree:before {
-  background-image: url("../assets/tiles/varanasi_1-H.jpg"); }
+  content: "Amritsar";
+  background-image: url("../assets/tiles/night_goldenTemple-med.jpg"); }
