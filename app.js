@@ -11,4 +11,8 @@ $(document).ready(function() {
     cssEase: 'linear',
     arrows: false
   });
+	
+	$(".fa-bars").on("click", () => {
+		$("ul").toggleClass("flex");
+	});
 })
