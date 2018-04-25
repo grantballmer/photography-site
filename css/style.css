@@ -146,7 +146,6 @@ picture {
     width: 100%;
     content: "";
     position: absolute;
-    background-image: url("../assets/tiles/bagan_day-med.jpg");
     background-size: cover;
     background-position: center;
     transition: transform .25s .1s ease-in;
