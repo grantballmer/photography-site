@@ -13,17 +13,23 @@ html, body {
   perspective: 1500px; }
 
 #mapid {
-  height: 650px;
+  height: 350px;
   width: 100%;
   z-index: 1; }
+  @media (min-width: 812px) {
+    #mapid {
+      height: 650px; } }
 
 .overlay {
-  width: 150px;
+  width: 75px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.52);
   z-index: 2;
   position: absolute;
   border-right: 1px solid rgba(0, 0, 0, 0.6); }
+  @media (min-width: 812px) {
+    .overlay {
+      width: 150px; } }
   .overlay ul {
     height: 50%;
     display: flex;
@@ -40,29 +46,38 @@ html, body {
     letter-spacing: 1.5px;
     text-align: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: .6rem;
     font-weight: 500;
     font-family: "Montserrat";
     list-style-type: none;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
+    @media (min-width: 812px) {
+      .overlay li {
+        font-size: 1.2rem; } }
     .overlay li:hover {
       background-color: rgba(0, 0, 0, 0.6); }
 
 .cities {
-  left: 150px;
+  left: 75px;
   transition: all .5s linear;
   transform-style: preserve-3d;
   transform: rotateY(90deg);
   transform-origin: left;
   opacity: 0; }
+  @media (min-width: 812px) {
+    .cities {
+      left: 150px; } }
   .cities ul {
     height: 75%; }
   .cities__india ul {
     height: 100%; }
   .cities li {
-    font-size: .85rem;
+    font-size: .45rem;
     letter-spacing: 1.5px; }
+    @media (min-width: 812px) {
+      .cities li {
+        font-size: .85rem; } }
 
 .flip {
   opacity: 1;
