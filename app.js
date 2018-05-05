@@ -4,7 +4,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 1500,
     pauseOnHover: false,
-    adaptiveHeight: true,
+    //adaptiveHeight: true,
     infinite: true,
     speed: 500,
     fade: true,
