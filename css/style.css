@@ -73,20 +73,29 @@ nav ul {
     align-items: center;
     padding: 0 10px;
     list-style-type: none;
-    border-top: 2px solid grey; }
+    border-top: 2px solid grey;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2.2px;
+    text-transform: uppercase; }
     @media (min-width: 812px) {
       nav ul li {
         height: auto;
         width: auto;
         display: block;
-        border: 0; } }
+        border: 0;
+        transition: border-bottom .3s linear;
+        border-bottom: 2px solid transparent; } }
+    @media (min-width: 812px) {
+      nav ul li:hover {
+        border-bottom: 2px solid white; } }
     nav ul li:last-of-type {
       border-bottom: 2px solid grey; }
       @media (min-width: 812px) {
         nav ul li:last-of-type {
           border: 0; } }
     nav ul li i {
-      font-size: 2.2rem !important; }
+      font-size: 1.6rem !important; }
   nav ul a {
     text-decoration: none;
     color: white; }
@@ -159,29 +168,32 @@ picture {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0); }
-  .box:after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: "See Gallery";
-    color: white;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transform: translateY(100%);
-    outline: 1px solid white;
-    outline-offset: -10px;
-    transition: transform .25s .1s ease-in; }
-  .box:hover:after {
-    transform: translateY(0); }
-  .box:hover:before {
-    transform: translateY(-100%);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(-100%) translateZ(0) scale(1, 1);
-    transform: translateY(-100%) translateZ(0); }
+  @media (min-width: 812px) {
+    .box:after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "See Gallery";
+      color: white;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transform: translateY(100%);
+      outline: 1px solid white;
+      outline-offset: -10px;
+      transition: transform .25s .1s ease-in; } }
+  @media (min-width: 812px) {
+    .box:hover:after {
+      transform: translateY(0); } }
+  @media (min-width: 812px) {
+    .box:hover:before {
+      transform: translateY(-100%);
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateY(-100%) translateZ(0) scale(1, 1);
+      transform: translateY(-100%) translateZ(0); } }
 
 .myanmar {
   background-image: url("../assets/maps/agra.jpg"); }

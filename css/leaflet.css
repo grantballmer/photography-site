@@ -81,4 +81,5 @@ html, body {
 
 .flip {
   opacity: 1;
-  transform: rotateY(0deg); }
+  transform: rotateY(0deg);
+  z-index: 3; }

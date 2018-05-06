@@ -59,7 +59,7 @@ nav {
 	text-align: center;
 	transition: background-color .3s linear;
 	z-index: 2;
-	
+//	font-family: "Lato";
 	&:hover {
 		background-color: rgba(0,0,0, .3);
 	}
@@ -121,11 +121,25 @@ nav ul {
 		list-style-type: none;
 		border-top: 2px solid grey;
 		
+		font-size: 1.4rem;
+		font-weight: 300;
+		letter-spacing: 2.2px;
+		text-transform: uppercase;
+		
+		
 		@include tablet {
 			height: auto;
 			width: auto;
 			display: block;
 			border: 0;
+			transition: border-bottom .3s linear;
+			border-bottom: 2px solid transparent;
+		}
+		
+		&:hover {
+			@include tablet {
+				border-bottom: 2px solid white;
+			}
 		}
 		
 		&:last-of-type {
@@ -136,7 +150,7 @@ nav ul {
 		}
 		
 		i {
-			font-size: 2.2rem !important;
+			font-size: 1.6rem !important;
 		}
 		
 	}
@@ -227,30 +241,36 @@ picture {
   }
   
   &:after {
-    @include flex(center, center);
-    content: "See Gallery";
-    color: white;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transform: translateY(100%);
-    outline: 1px solid white;
-    outline-offset: -10px;
-    transition: transform .25s .1s ease-in;
+		@include tablet {
+			@include flex(center, center);
+			content: "See Gallery";
+			color: white;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			transform: translateY(100%);
+			outline: 1px solid white;
+			outline-offset: -10px;
+			transition: transform .25s .1s ease-in;
+		}
   }
   
   &:hover:after {
-    transform: translateY(0);
+		@include tablet {
+			transform: translateY(0);	
+		}
   }
   
   &:hover:before {
-    transform: translateY(-100%);
-		-webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(-100%) translateZ(0) scale(1.0, 1.0);
-    transform: translateY(-100%) translateZ(0);
+		@include tablet {
+			transform: translateY(-100%);
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateY(-100%) translateZ(0) scale(1.0, 1.0);
+			transform: translateY(-100%) translateZ(0);
+		}
   }
 }
 

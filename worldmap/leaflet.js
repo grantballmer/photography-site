@@ -146,7 +146,7 @@ const cities = document.querySelectorAll(".cities li");
 cities.forEach((city, index) => {
 	city.addEventListener("click", () => {
 		let place = city.textContent.replace(" ", "");
-		eval(place).openPopup();
+		eval(place).togglePopup();
 	})
 })
 

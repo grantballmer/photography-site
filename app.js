@@ -15,4 +15,11 @@ $(document).ready(function() {
 	$(".fa-bars").on("click", () => {
 		$("ul").toggleClass("flex");
 	});
+	
+	//smooth scrolling
+	$("nav a").on("click",function() {
+		let link = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(link).offset().top}, "slow");
+		return false;
+	});
 })

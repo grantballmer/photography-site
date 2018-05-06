@@ -13,10 +13,16 @@ $(document).ready(function() {
   });
 	
 	$(".arrows__right").on("click", () => {
+		$(".arrows").addClass("arrowChange");
 		$(".carousel").slick("slickNext");
 	});
 	
+	$(".carousel").on("afterChange", () => {
+		$(".arrows").removeClass("arrowChange");
+	});
+	
 	$(".arrows__left").on("click", () => {
+		$(".arrows").addClass("arrowChange");
 		$(".carousel").slick("slickPrev");
 	});
 	
