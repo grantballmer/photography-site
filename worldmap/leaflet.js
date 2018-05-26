@@ -13,21 +13,21 @@ let mobileView = new View(15, 101, 2.5, 4, 5, 150);
 
 (window.innerWidth > 1024) ? responsiveView = desktopView : responsiveView = mobileView;
 
-//const southWest = L.latLng(-89.98155760646617, -180);
-//const northEast = L.latLng(89.99346179538875, 180);
-//const bounds = L.latLngBounds(southWest, northEast);
-//
-//let mymap = L.map('mapid', {
-//  zoomControl: false,
-//  zoomSnap: 0.5,
-//	maxBounds: bounds,
-//  maxBoundsViscosity: 1.0
-//}).setView([responsiveView.lat, responsiveView.lon], responsiveView.zoom);
-//
-////set zoom control to right side
-//L.control.zoom({
-//     position:'topright'
-//}).addTo(mymap);
+const southWest = L.latLng(-89.98155760646617, -180);
+const northEast = L.latLng(89.99346179538875, 180);
+const bounds = L.latLngBounds(southWest, northEast);
+
+let mymap = L.map('mapid', {
+  zoomControl: false,
+  zoomSnap: 0.5,
+	maxBounds: bounds,
+  maxBoundsViscosity: 1.0
+}).setView([responsiveView.lat, responsiveView.lon], responsiveView.zoom);
+
+//set zoom control to right side
+L.control.zoom({
+     position:'topright'
+}).addTo(mymap);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/grantball/cjgqcue9i000a2roaegkhd506/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JhbnRiYWxsIiwiYSI6ImNqZ3Fjb3lmMDA2Z3MzMnBobW92cGJrOTUifQ.RtvEgGkoRjjZpDJQaBdogA', {
 		minZoom: 2,
