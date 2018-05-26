@@ -10,7 +10,8 @@ html, body {
 .wrapper {
   height: auto;
   position: relative;
-  perspective: 1500px; }
+  -webkit-perspective: 1500px;
+          perspective: 1500px; }
 
 #mapid {
   height: 350px;
@@ -61,9 +62,12 @@ html, body {
 .cities {
   left: 75px;
   transition: all .5s linear;
-  transform-style: preserve-3d;
-  transform: rotateY(90deg);
-  transform-origin: left;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   opacity: 0; }
   @media (min-width: 812px) {
     .cities {
@@ -81,5 +85,6 @@ html, body {
 
 .flip {
   opacity: 1;
-  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
   z-index: 3; }

@@ -71,7 +71,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    margin: 0 10px;
     list-style-type: none;
     border-top: 2px solid grey;
     font-size: 1.4rem;
@@ -112,6 +112,20 @@ nav ul {
   user-select: none;
   outline: none; }
 
+.fa-chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin: 0 20px;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 2.5rem !important;
+  cursor: pointer; }
+  .fa-chevron-right {
+    right: 0; }
+  .fa-chevron:hover {
+    color: white; }
+
 .hero {
   top: 0;
   left: 0;
@@ -142,7 +156,7 @@ picture {
 
 .box {
   min-height: 300px;
-  background-image: url("http://www.emapsworld.com/images/south-korea-admin-map-black-and-white.gif");
+  background: none;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -173,7 +187,7 @@ picture {
       display: flex;
       justify-content: center;
       align-items: center;
-      content: "See Gallery";
+      content: "Gallery";
       color: white;
       height: 100%;
       width: 100%;
@@ -195,91 +209,171 @@ picture {
       -webkit-transform: translateY(-100%) translateZ(0) scale(1, 1);
       transform: translateY(-100%) translateZ(0); } }
 
-.myanmar {
-  background-image: url("../assets/maps/agra.jpg"); }
-  .myanmar:before {
-    background-image: url("../assets/tiles/bagan_night.jpg");
-    content: "Myanmar"; }
+@media (min-width: 812px) {
+  .myanmar {
+    background-image: url("../assets/maps/bagan.jpg"); } }
 
-.seoul {
-  background-image: url("../assets/maps/jaisalmer.jpg"); }
-  .seoul:before {
-    content: "Seoul";
-    background-image: url("../assets/tiles/seoul_namdaemun-med.jpg"); }
+.myanmar:before {
+  background-image: url("../assets/tiles/bagan_night.jpg");
+  content: "Myanmar"; }
+
+@media (min-width: 812px) {
+  .seoul {
+    background-image: url("../assets/maps/seoul.jpg"); } }
+
+.seoul:before {
+  content: "Seoul";
+  background-image: url("../assets/tiles/seoul_namdaemun-med.jpg"); }
+
+@media (min-width: 812px) {
+  .bali {
+    background-image: url("../assets/maps/bali.jpg"); } }
 
 .bali:before {
   content: "Bali";
   background-image: url("../assets/tiles/ubud_legong-med.jpg"); }
 
+@media (min-width: 812px) {
+  .kaziranga {
+    background-image: url("../assets/maps/kaziranga.jpg"); } }
+
 .kaziranga:before {
   content: "Kaziranga";
   background-image: url("../assets/tiles/kaziranga_rhino-med.jpg"); }
+
+@media (min-width: 812px) {
+  .bharatpur {
+    background-image: url("../assets/maps/bharatpur.jpg"); } }
 
 .bharatpur:before {
   content: "Bharatpur";
   background-image: url("../assets/tiles/bharatpur_keoladeo-med.jpg"); }
 
+@media (min-width: 812px) {
+  .bundi {
+    background-image: url("../assets/maps/bundi.jpg"); } }
+
 .bundi:before {
   content: "Bundi";
   background-image: url("../assets/tiles/bundi_city-med.jpg"); }
+
+@media (min-width: 812px) {
+  .pushkar {
+    background-image: url("../assets/maps/pushkar.jpg"); } }
 
 .pushkar:before {
   background-image: url("../assets/tiles/pushkar_man-med.jpg");
   content: "Pushkar"; }
 
+@media (min-width: 812px) {
+  .varanasi {
+    background-image: url("../assets/maps/varanasi.jpg"); } }
+
 .varanasi:before {
   content: "Varanasi";
   background-image: url("../assets/tiles/varanasi_morning_aarti.jpg"); }
+
+@media (min-width: 812px) {
+  .jaipur {
+    background-image: url("../assets/maps/jaipur.jpg"); } }
 
 .jaipur:before {
   content: "Jaipur";
   background-image: url("../assets/tiles/jaipur_jalMahal-med.jpg"); }
 
+@media (min-width: 812px) {
+  .sumatra {
+    background-image: url("../assets/maps/sumatra.jpg"); } }
+
 .sumatra:before {
   content: "Sumatra";
   background-image: url("../assets/tiles/sumatra_orangutan-med.jpg"); }
 
+@media (min-width: 812px) {
+  .java {
+    background-image: url("../assets/maps/java.jpg"); } }
+
 .java:before {
   content: "East Java";
   background-image: url("../assets/tiles/bromo-med.jpg"); }
+
+@media (min-width: 812px) {
+  .ranthambore {
+    background-image: url("../assets/maps/ranthambore.jpg"); } }
 
 .ranthambore:before {
   content: "Ranthambore";
   font-size: 2rem;
   background-image: url("../assets/tiles/ranthambore_tiger-med.jpg"); }
 
+@media (min-width: 812px) {
+  .agra {
+    background-image: url("../assets/maps/agra.jpg"); } }
+
 .agra:before {
   content: "Agra";
   font-size: 2rem;
   background-image: url("../assets/tiles/taj_mahal-med.jpg"); }
 
+@media (min-width: 812px) {
+  .jinhae {
+    background-image: url("../assets/maps/jinhae.jpg"); } }
+
 .jinhae:before {
   content: "Jinhae";
   background-image: url("../assets/tiles/jinhae_cherryBlossoms-med.jpg"); }
+
+@media (min-width: 812px) {
+  .jodhpur {
+    background-image: url("../assets/maps/jodhpur.jpg"); } }
 
 .jodhpur:before {
   content: "Jodhpur";
   background-image: url("../assets/tiles/jodhpur_clocktower-med.jpg"); }
 
+@media (min-width: 812px) {
+  .danyang {
+    background-image: url("../assets/maps/danyang.jpg"); } }
+
 .danyang:before {
   content: "Danyang";
   background-image: url("../assets/tiles/danyang_1500.jpg"); }
+
+@media (min-width: 812px) {
+  .seoraksan {
+    background-image: url("../assets/maps/seoraksan.jpg"); } }
 
 .seoraksan:before {
   content: "Seoraksan";
   background-image: url("../assets/tiles/seoraksan-med.jpg"); }
 
+@media (min-width: 812px) {
+  .komodo {
+    background-image: url("../assets/maps/komodo.jpg"); } }
+
 .komodo:before {
   content: "Komodo";
   background-image: url("../assets/tiles/padar_island-med.jpg"); }
+
+@media (min-width: 812px) {
+  .boseong {
+    background-image: url("../assets/maps/boseong.jpg"); } }
 
 .boseong:before {
   content: "Boseong";
   background-image: url("../assets/tiles/boseong_greenTeaFields-med.jpg"); }
 
+@media (min-width: 812px) {
+  .amritsar {
+    background-image: url("../assets/maps/amritsar.jpg"); } }
+
 .amritsar:before {
   content: "Amritsar";
   background-image: url("../assets/tiles/amritsar_golden_temple.jpg"); }
+
+@media (min-width: 812px) {
+  .korea {
+    background-image: url("../assets/maps/seoul.jpg"); } }
 
 .korea:before {
   content: "Korea";

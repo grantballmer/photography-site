@@ -2,11 +2,14 @@ html, body {
   width: 100%;
   height: 100%; }
 
+html {
+  overflow-y: scroll; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato"; }
+  font-family: "Montserrat"; }
 
 nav {
   height: 75px;
@@ -14,7 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #BDBDBD;
   color: white;
   padding: 10px 20px;
   text-align: center; }
@@ -66,7 +69,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    margin: 0 10px;
     list-style-type: none;
     border-top: 2px solid grey;
     cursor: pointer;
@@ -79,7 +82,12 @@ ul {
         height: auto;
         width: auto;
         display: block;
-        border: 0; } }
+        border: 0;
+        transition: border-bottom .3s linear;
+        border-bottom: 2px solid transparent; } }
+    @media (min-width: 812px) {
+      ul li:hover {
+        border-bottom: 2px solid white; } }
     ul li:last-of-type {
       border-bottom: 2px solid grey; }
       @media (min-width: 812px) {
@@ -100,13 +108,13 @@ ul {
   position: relative; }
   @media (min-width: 812px) {
     .wrapper {
-      margin: 25px 70px; } }
+      margin: 25px 70px 10px 70px; } }
   @media (min-width: 1024px) {
     .wrapper {
-      margin: 25px 125px; } }
+      margin: 25px 125px 10px 125px; } }
   @media (min-width: 1400px) {
     .wrapper {
-      margin: 25px 175px; } }
+      margin: 25px 175px 10px 175px; } }
   .wrapper:hover .arrows {
     opacity: 1; }
 
@@ -141,3 +149,22 @@ ul {
 
 .carousel img {
   max-width: 100%; }
+
+.carousel-nav {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center; }
+  @media (min-width: 812px) {
+    .carousel-nav {
+      margin: 0 70px 20px 70px; } }
+  @media (min-width: 1024px) {
+    .carousel-nav {
+      margin: 0 125px 20px 125px; } }
+  @media (min-width: 1400px) {
+    .carousel-nav {
+      margin: 0 175px 20px 175px; } }
+  .carousel-nav .slick-slide {
+    opacity: .6; }
+  .carousel-nav .slick-center {
+    opacity: 1; }

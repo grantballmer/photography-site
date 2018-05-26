@@ -41,19 +41,23 @@ html, body {
   height: 100%;
 }
 
+html {
+	overflow-y: scroll;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato";
-//	font-family: "Montserrat";
+//  font-family: "Lato";
+	font-family: "Montserrat";
 }
 
 nav {
 	height: 75px;
 	@include flex(space-between, center);
 	flex-wrap: wrap;
-	background-color: rgba(0,0,0, 0.90);
+	background-color: #BDBDBD;
 	color: white;
 	padding: 10px 20px;
 	text-align: center;
@@ -110,7 +114,7 @@ ul {
 		width: 100%;
 		height: 50%;
 		@include flex(center, center);
-		padding: 0 10px;
+		margin: 0 10px;
 		list-style-type: none;
 		border-top: 2px solid grey;
 		cursor: pointer;
@@ -125,6 +129,14 @@ ul {
 			width: auto;
 			display: block;
 			border: 0;
+			transition: border-bottom .3s linear;
+			border-bottom: 2px solid transparent;
+		}
+		
+		&:hover {
+			@include tablet {
+				border-bottom: 2px solid white;
+			}
 		}
 		
 		&:last-of-type {
@@ -154,13 +166,13 @@ ul {
 	margin: 25px 0;
 	position: relative;
 	@include tablet {
-		margin: 25px 70px;
+		margin: 25px 70px 10px 70px;
 	}
 	@include desktop {
-		margin: 25px 125px;
+		margin: 25px 125px 10px 125px;
 	}
 	@include super {
-		margin: 25px 175px;
+		margin: 25px 175px 10px 175px;
 	}
 	&:hover .arrows {
 		opacity: 1;
@@ -203,8 +215,31 @@ ul {
 }
 
 .carousel {
-	
 	img {
 		max-width: 100%;
+	}
+}
+
+.carousel-nav {
+	margin-bottom: 25px;
+	display: flex;
+	align-items: stretch; 
+	justify-content: center;
+	@include tablet {
+		margin: 0 70px 20px 70px;
+	}
+	@include desktop {
+		margin: 0 125px 20px 125px;
+	}
+	@include super {
+		margin: 0 175px 20px 175px;
+	}
+	
+	.slick-slide {
+		opacity: .6;
+	}
+
+	.slick-center {
+		opacity: 1;
 	}
 }

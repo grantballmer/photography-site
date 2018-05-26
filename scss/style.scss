@@ -117,7 +117,7 @@ nav ul {
 		width: 100%;
 		height: 50%;
 		@include flex(center, center);
-		padding: 0 10px;
+		margin: 0 10px;
 		list-style-type: none;
 		border-top: 2px solid grey;
 		
@@ -175,6 +175,25 @@ nav ul {
 	outline: none;
 }
 
+.fa-chevron {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	margin: 0 20px;
+	color: rgba(255,255,255, 0.15);
+	font-size: 2.5rem !important;
+	cursor: pointer;
+	
+	&-right {
+		right: 0;
+	}
+	
+	&:hover {
+		color: white;
+	}
+}
+
 .hero {
   top: 0;
   left: 0;
@@ -212,7 +231,7 @@ picture {
 
 .box{
   min-height: 300px;
-  background-image: url("http://www.emapsworld.com/images/south-korea-admin-map-black-and-white.gif");
+	background: none;
   background-size: cover;
 	background-position: center;
   position: relative;
@@ -231,7 +250,6 @@ picture {
     width: 100%;
     content: "";
     position: absolute;
-    //background-image: url("../assets/tiles/bagan_day-med.jpg");
     background-size: cover;
     background-position: center;
     transition: transform .25s .1s ease-in;
@@ -243,7 +261,7 @@ picture {
   &:after {
 		@include tablet {
 			@include flex(center, center);
-			content: "See Gallery";
+			content: "Gallery";
 			color: white;
 			height: 100%;
 			width: 100%;
@@ -275,7 +293,9 @@ picture {
 }
 
 .myanmar {
-	background-image: url("../assets/maps/agra.jpg");
+	@include tablet {
+		background-image: url("../assets/maps/bagan.jpg");
+	}
 	&:before {
 	background-image: url("../assets/tiles/bagan_night.jpg");
 	content: "Myanmar";
@@ -283,7 +303,9 @@ picture {
 }
 
 .seoul {
-	background-image: url("../assets/maps/jaisalmer.jpg");
+	@include tablet {
+		background-image: url("../assets/maps/seoul.jpg");
+	}
 	&:before {
 		content: "Seoul";
 		background-image: url("../assets/tiles/seoul_namdaemun-med.jpg");
@@ -291,6 +313,9 @@ picture {
 }
 
 .bali {
+	@include tablet {
+		background-image: url("../assets/maps/bali.jpg");
+	}
 	&:before {
 		content: "Bali";	
 		background-image: url("../assets/tiles/ubud_legong-med.jpg");
@@ -298,6 +323,9 @@ picture {
 }
 
 .kaziranga {
+	@include tablet {
+		background-image: url("../assets/maps/kaziranga.jpg");
+	}
 	&:before {
 		content: "Kaziranga";
 		background-image: url("../assets/tiles/kaziranga_rhino-med.jpg");
@@ -305,6 +333,9 @@ picture {
 }
 
 .bharatpur {
+	@include tablet {
+		background-image: url("../assets/maps/bharatpur.jpg");
+	}
 	&:before {
 		content: "Bharatpur";
 		background-image: url("../assets/tiles/bharatpur_keoladeo-med.jpg");
@@ -312,6 +343,9 @@ picture {
 }
 
 .bundi {
+	@include tablet {
+		background-image: url("../assets/maps/bundi.jpg");
+	}
 	&:before {
 		content: "Bundi";
 		background-image: url("../assets/tiles/bundi_city-med.jpg");
@@ -319,6 +353,9 @@ picture {
 }
 
 .pushkar {
+	@include tablet {
+		background-image: url("../assets/maps/pushkar.jpg");
+	}
 	&:before {
 		background-image: url("../assets/tiles/pushkar_man-med.jpg");
 		content: "Pushkar";
@@ -326,6 +363,9 @@ picture {
 }
 
 .varanasi {
+	@include tablet {
+		background-image: url("../assets/maps/varanasi.jpg");
+	}
 	&:before {
 		content: "Varanasi";
 		background-image: url("../assets/tiles/varanasi_morning_aarti.jpg");
@@ -333,6 +373,9 @@ picture {
 }
 
 .jaipur {
+	@include tablet {
+		background-image: url("../assets/maps/jaipur.jpg");
+	}
 	&:before {
 		content: "Jaipur";
 		background-image: url("../assets/tiles/jaipur_jalMahal-med.jpg");
@@ -340,6 +383,9 @@ picture {
 }
 
 .sumatra {
+	@include tablet {
+		background-image: url("../assets/maps/sumatra.jpg");
+	}
 	&:before {
 		content: "Sumatra";
 		background-image: url("../assets/tiles/sumatra_orangutan-med.jpg");
@@ -347,12 +393,18 @@ picture {
 }
 
 .java {
+	@include tablet {
+		background-image: url("../assets/maps/java.jpg");
+	}
 	&:before {
 		content: "East Java";
 		background-image: url("../assets/tiles/bromo-med.jpg");
 	}
 }
 .ranthambore {
+	@include tablet {
+		background-image: url("../assets/maps/ranthambore.jpg");
+	}
 	&:before {
 		content: "Ranthambore";
 		font-size: 2rem;
@@ -361,6 +413,9 @@ picture {
 }
 
 .agra {
+	@include tablet {
+		background-image: url("../assets/maps/agra.jpg");
+	}
 	&:before {
 		content: "Agra";
 		font-size: 2rem;
@@ -369,6 +424,9 @@ picture {
 }
 
 .jinhae {
+	@include tablet {
+		background-image: url("../assets/maps/jinhae.jpg");
+	}
 	&:before {
 		content: "Jinhae";
 		background-image: url("../assets/tiles/jinhae_cherryBlossoms-med.jpg");
@@ -376,6 +434,9 @@ picture {
 }
 
 .jodhpur {
+	@include tablet {
+		background-image: url("../assets/maps/jodhpur.jpg");
+	}
 	&:before {
 		content: "Jodhpur";
 		background-image: url("../assets/tiles/jodhpur_clocktower-med.jpg");
@@ -383,6 +444,9 @@ picture {
 }
 
 .danyang { 
+	@include tablet {
+		background-image: url("../assets/maps/danyang.jpg");
+	}
 	&:before {
 		content: "Danyang";
 		background-image: url("../assets/tiles/danyang_1500.jpg");
@@ -390,6 +454,9 @@ picture {
 	}
 }
 .seoraksan {
+	@include tablet {
+		background-image: url("../assets/maps/seoraksan.jpg");
+	}
 	&:before {
 		content: "Seoraksan";
 		background-image: url("../assets/tiles/seoraksan-med.jpg");
@@ -397,6 +464,9 @@ picture {
 }
 
 .komodo {
+	@include tablet {
+		background-image: url("../assets/maps/komodo.jpg");
+	}
 	&:before {
 		content: "Komodo";
 		background-image: url("../assets/tiles/padar_island-med.jpg");
@@ -404,6 +474,9 @@ picture {
 }
 
 .boseong {
+	@include tablet {
+		background-image: url("../assets/maps/boseong.jpg");
+	}
 	&:before {
 		content: "Boseong";
 		background-image: url("../assets/tiles/boseong_greenTeaFields-med.jpg");
@@ -411,6 +484,9 @@ picture {
 }
 
 .amritsar {
+	@include tablet {
+		background-image: url("../assets/maps/amritsar.jpg");
+	}
 	&:before {
 		content: "Amritsar";
 		background-image: url("../assets/tiles/amritsar_golden_temple.jpg");
@@ -418,6 +494,9 @@ picture {
 }
 
 .korea {
+	@include tablet {
+		background-image: url("../assets/maps/seoul.jpg");
+	}
 	&:before {
 		content: "Korea";
 		background-image: url("../assets/tiles/korea_nami_island-med.jpg");

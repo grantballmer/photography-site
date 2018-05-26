@@ -13,15 +13,21 @@ let mobileView = new View(15, 101, 2.5, 4, 5, 150);
 
 (window.innerWidth > 1024) ? responsiveView = desktopView : responsiveView = mobileView;
 
-let mymap = L.map('mapid', {
-  zoomControl: false,
-  zoomSnap: 0.5
-}).setView([responsiveView.lat, responsiveView.lon], responsiveView.zoom);
-
-//set zoom control to right side
-L.control.zoom({
-     position:'topright'
-}).addTo(mymap);
+//const southWest = L.latLng(-89.98155760646617, -180);
+//const northEast = L.latLng(89.99346179538875, 180);
+//const bounds = L.latLngBounds(southWest, northEast);
+//
+//let mymap = L.map('mapid', {
+//  zoomControl: false,
+//  zoomSnap: 0.5,
+//	maxBounds: bounds,
+//  maxBoundsViscosity: 1.0
+//}).setView([responsiveView.lat, responsiveView.lon], responsiveView.zoom);
+//
+////set zoom control to right side
+//L.control.zoom({
+//     position:'topright'
+//}).addTo(mymap);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/grantball/cjgqcue9i000a2roaegkhd506/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JhbnRiYWxsIiwiYSI6ImNqZ3Fjb3lmMDA2Z3MzMnBobW92cGJrOTUifQ.RtvEgGkoRjjZpDJQaBdogA', {
 		minZoom: 2,
@@ -33,68 +39,68 @@ L.tileLayer('https://api.mapbox.com/styles/v1/grantball/cjgqcue9i000a2roaegkhd50
 
 //korea markers
 let seoul = L.marker([37.5665, 126.9780]).addTo(mymap);
-seoul.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/gyeongbokgung.jpg" width=${responsiveView.popupWidth}></a>`);
+seoul.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/gyeongbokgung.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let danyang = L.marker([36.9845, 128.3655]).addTo(mymap);
-danyang.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/danyang-tent.jpg" width=${responsiveView.popupWidth}></a>`);
+danyang.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/danyang-tent.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let boseong = L.marker([34.7715, 127.0799]).addTo(mymap);
-boseong.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/boseong-field.jpg" width=${responsiveView.popupWidth}></a>`);
+boseong.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/boseong-field.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let seoraksan = L.marker([38.1196, 128.4656]).addTo(mymap);
-seoraksan.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/seoraksan.jpg" width=${responsiveView.popupWidth}></a>`);
+seoraksan.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/seoraksan.jpg" width=${responsiveView.popupWidth}></a>`);
 
 //myanmar markers
 let bagan = L.marker([21.1717, 94.8585]).addTo(mymap);
-bagan.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/sunrise.jpg" width=${responsiveView.popupWidth}></a>`);
+bagan.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/sunrise.jpg" width=${responsiveView.popupWidth}></a>`);
 
 //indonesia markers
 let bukitLawang = L.marker([3.5553, 98.1448]).addTo(mymap);
-bukitLawang.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/orangutan.jpg" width=${responsiveView.popupWidth}></a>`);
+bukitLawang.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/orangutan.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let java = L.marker([-7.9425, 112.9530]).addTo(mymap);
-java.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/bromo_sunrise.jpg" width=${responsiveView.popupWidth}></a>`);
+java.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/bromo_sunrise.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let bali = L.marker([-8.5069, 115.2625]).addTo(mymap);
-bali.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/bali-dancer.jpg" width=${responsiveView.popupWidth}></a>`);
+bali.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/bali-dancer.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let komodo = L.marker([-8.4538, 119.8728]).addTo(mymap);
-komodo.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/komodo_dragon.jpg" width=${responsiveView.popupWidth}></a>`);
+komodo.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/komodo_dragon.jpg" width=${responsiveView.popupWidth}></a>`);
 
 //india markers
 
 let delhi = L.marker([28.7041, 77.1025]).addTo(mymap);
-delhi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/delhi.jpg" width=${responsiveView.popupWidth}></a>`);
+delhi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/delhi.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let agra = L.marker([27.1767, 78.0081]).addTo(mymap);
-agra.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/agra-taj.jpg" width=${responsiveView.popupWidth}></a>`);
+agra.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/agra-taj.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let bharatpur = L.marker([27.1593, 77.5232]).addTo(mymap);
 
 
 let ranthambore = L.marker([26.0173, 76.5026]).addTo(mymap);
-ranthambore.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/deer.jpg" width=${responsiveView.popupWidth}></a>`);
+ranthambore.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/deer.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let bundi = L.marker([25.4305, 75.6499]).addTo(mymap);
-bundi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/bundi.jpg" width=${responsiveView.popupWidth}></a>`);
+bundi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/bundi.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let pushkar = L.marker([26.4897, 74.5511]).addTo(mymap);
-pushkar.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/man.jpg" width=${responsiveView.popupWidth}></a>`);
+pushkar.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/man.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let jaipur = L.marker([26.9124, 75.7873]).addTo(mymap);
-jaipur.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/jaipur.jpg" width=${responsiveView.popupWidth}></a>`);
+jaipur.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/jaipur.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let jodhpur = L.marker([26.2389, 73.0243]).addTo(mymap);
-jodhpur.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/watchtower.jpg" width=${responsiveView.popupWidth}></a>`);
+jodhpur.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/watchtower.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let varanasi = L.marker([25.3176, 82.9739]).addTo(mymap);
-varanasi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/varanasi-evening.jpg" width=${responsiveView.popupWidth}></a>`);
+varanasi.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/varanasi-evening.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let amritsar = L.marker([31.6340, 74.8723]).addTo(mymap);
-amritsar.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/amritsar.jpg" width=${responsiveView.popupWidth}></a>`);
+amritsar.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/amritsar.jpg" width=${responsiveView.popupWidth}></a>`);
 
 let kaziranga = L.marker([26.5775, 93.1711]).addTo(mymap);
-kaziranga.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/thumbnails/kaziranga-rhino.jpg" width=${responsiveView.popupWidth}></a>`);
+kaziranga.bindPopup(`<a href="https://www.google.com" target="_blank"><img src="assets/maps/thumbnails/kaziranga-rhino.jpg" width=${responsiveView.popupWidth}></a>`);
 
 const markers = [seoul, danyang, boseong, seoraksan, bagan, bukitLawang, java, bali, komodo, delhi, agra, bharatpur, ranthambore, bundi, jaipur, pushkar, jodhpur, varanasi, amritsar, kaziranga];
 
