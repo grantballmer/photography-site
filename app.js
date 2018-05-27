@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	$(function() {
+			$('.lazy').Lazy();
+	});
 
   $('.hero').slick({
     dots: false,
