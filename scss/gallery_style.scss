@@ -162,8 +162,22 @@ ul {
 	z-index: 2;
 }
 
+.loading {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
-	margin: 25px 0;
+	display: none;
+	margin: 25px 10px 10px 10px;
 	position: relative;
 	@include tablet {
 		margin: 25px 70px 10px 70px;
@@ -222,11 +236,9 @@ ul {
 
 .carousel-nav {
 	margin-bottom: 25px;
-	display: flex;
-	align-items: stretch; 
-	justify-content: center;
-	@include tablet {
-		margin: 0 70px 20px 70px;
+	display: none;
+	@include wide-mobile {
+		margin: 0 10px 20px 10px;
 	}
 	@include desktop {
 		margin: 0 125px 20px 125px;

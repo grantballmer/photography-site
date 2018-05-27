@@ -103,8 +103,21 @@ ul {
   display: flex;
   z-index: 2; }
 
+.loading {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .wrapper {
-  margin: 25px 0;
+  display: none;
+  margin: 25px 10px 10px 10px;
   position: relative; }
   @media (min-width: 812px) {
     .wrapper {
@@ -152,12 +165,10 @@ ul {
 
 .carousel-nav {
   margin-bottom: 25px;
-  display: flex;
-  align-items: stretch;
-  justify-content: center; }
-  @media (min-width: 812px) {
+  display: none; }
+  @media (min-width: 550px) {
     .carousel-nav {
-      margin: 0 70px 20px 70px; } }
+      margin: 0 10px 20px 10px; } }
   @media (min-width: 1024px) {
     .carousel-nav {
       margin: 0 125px 20px 125px; } }

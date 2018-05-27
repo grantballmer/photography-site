@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $('.carousel').slick({
+	
+	$(window).on("load", function() {
+		$('.carousel').slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -39,6 +41,13 @@ $(document).ready(function() {
         }
       ]  
     });
+		$(".loading").hide();
+    $(".wrapper").show();
+		if (window.innerWidth > 550) {
+			$(".carousel-nav").show(); 
+		};
+		
+	});
 	
 	function nextSlide() {
 		$(".arrows").addClass("arrowChange");
