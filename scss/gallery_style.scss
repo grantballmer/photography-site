@@ -177,16 +177,16 @@ ul {
 
 .wrapper {
 	display: none;
-	margin: 25px 10px 10px 10px;
+	margin: 50px 10px 10px 10px;
 	position: relative;
 	@include tablet {
-		margin: 25px 70px 10px 70px;
+		margin: 75px 70px 10px 70px;
 	}
 	@include desktop {
-		margin: 25px 125px 10px 125px;
+		margin: 75px 125px 10px 125px;
 	}
 	@include super {
-		margin: 25px 175px 10px 175px;
+		margin: 75px 175px 10px 175px;
 	}
 	&:hover .arrows {
 		opacity: 1;

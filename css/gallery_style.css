@@ -117,17 +117,17 @@ ul {
 
 .wrapper {
   display: none;
-  margin: 25px 10px 10px 10px;
+  margin: 50px 10px 10px 10px;
   position: relative; }
   @media (min-width: 812px) {
     .wrapper {
-      margin: 25px 70px 10px 70px; } }
+      margin: 75px 70px 10px 70px; } }
   @media (min-width: 1024px) {
     .wrapper {
-      margin: 25px 125px 10px 125px; } }
+      margin: 75px 125px 10px 125px; } }
   @media (min-width: 1400px) {
     .wrapper {
-      margin: 25px 175px 10px 175px; } }
+      margin: 75px 175px 10px 175px; } }
   .wrapper:hover .arrows {
     opacity: 1; }
 
