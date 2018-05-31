@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px 25px; }
+
+.half {
+  width: 50%; }
+
+.bio {
+  padding: 50px;
+  font-size: 1.3rem;
+  text-indent: 20px; }
+
+img {
+  max-width: 100%; }
