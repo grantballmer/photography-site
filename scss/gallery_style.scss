@@ -162,18 +162,35 @@ ul {
 	z-index: 2;
 }
 
-.loading {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.loader {
+	@include flex(center, center);
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translateX(-50%);
 }
+
+.bar {
+	width: 12px;
+	height: 105px;
+	margin: 0 1.5px;
+	background-color: #212121;
+	transform: scaleY(0.57);
+}
+
+.bar__one {animation: loading 2.5s .25s infinite linear}
+.bar__two {animation: loading 2.5s .37s infinite linear}
+.bar__three {animation: loading 2.5s .49s infinite linear}
+.bar__four {animation: loading 2.5s .61s infinite linear}
+.bar__five {animation: loading 2.5s .73s infinite linear}
+
+@keyframes loading {
+	0% {transform: scaleY(0.57);}
+	10%{transform: scaleY(1.0);}
+	20%{transform: scaleY(0.57);}
+	100%{transform: scaleY(0.57);}
+}
+
 
 .wrapper {
 	display: none;
