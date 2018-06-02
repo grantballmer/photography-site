@@ -49,7 +49,10 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
-  user-select: none; }
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media (min-width: 812px) {
     ul {
       width: inherit;
@@ -110,39 +113,64 @@ ul {
   position: absolute;
   top: 35%;
   left: 50%;
-  transform: translateX(-50%); }
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .bar {
   width: 12px;
   height: 105px;
   margin: 0 1.5px;
   background-color: #212121;
-  transform: scaleY(0.57); }
+  -webkit-transform: scaleY(0.57);
+          transform: scaleY(0.57); }
 
 .bar__one {
-  animation: loading 2.5s .25s infinite linear; }
+  -webkit-animation: loading 2.5s .25s infinite linear;
+          animation: loading 2.5s .25s infinite linear; }
 
 .bar__two {
-  animation: loading 2.5s .37s infinite linear; }
+  -webkit-animation: loading 2.5s .37s infinite linear;
+          animation: loading 2.5s .37s infinite linear; }
 
 .bar__three {
-  animation: loading 2.5s .49s infinite linear; }
+  -webkit-animation: loading 2.5s .49s infinite linear;
+          animation: loading 2.5s .49s infinite linear; }
 
 .bar__four {
-  animation: loading 2.5s .61s infinite linear; }
+  -webkit-animation: loading 2.5s .61s infinite linear;
+          animation: loading 2.5s .61s infinite linear; }
 
 .bar__five {
-  animation: loading 2.5s .73s infinite linear; }
+  -webkit-animation: loading 2.5s .73s infinite linear;
+          animation: loading 2.5s .73s infinite linear; }
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); }
+  10% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); }
+  20% {
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); }
+  100% {
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); } }
 
 @keyframes loading {
   0% {
-    transform: scaleY(0.57); }
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); }
   10% {
-    transform: scaleY(1); }
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); }
   20% {
-    transform: scaleY(0.57); }
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); }
   100% {
-    transform: scaleY(0.57); } }
+    -webkit-transform: scaleY(0.57);
+            transform: scaleY(0.57); } }
 
 .wrapper {
   display: none;
@@ -164,7 +192,8 @@ ul {
   opacity: 1;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 4px;
   z-index: 2;

@@ -51,7 +51,10 @@ nav ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
-  user-select: none; }
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media (min-width: 812px) {
     nav ul {
       width: auto;
@@ -109,13 +112,16 @@ nav ul {
   height: auto;
   position: relative;
   -webkit-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   outline: none; }
 
 .fa-chevron {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 2;
   margin: 0 20px;
   color: rgba(255, 255, 255, 0.15);
@@ -131,12 +137,18 @@ nav ul {
   left: 0;
   width: 100%;
   height: auto;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   outline: none; }
   .hero img {
     display: block;
     max-width: 100%;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     outline: none; }
 
 picture {
@@ -178,7 +190,9 @@ picture {
     position: absolute;
     background-size: cover;
     background-position: center;
+    transition: -webkit-transform .25s .1s ease-in;
     transition: transform .25s .1s ease-in;
+    transition: transform .25s .1s ease-in, -webkit-transform .25s .1s ease-in;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0); }
@@ -195,16 +209,21 @@ picture {
       top: 0;
       left: 0;
       z-index: 1;
-      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
       outline: 1px solid white;
       outline-offset: -10px;
-      transition: transform .25s .1s ease-in; } }
+      transition: -webkit-transform .25s .1s ease-in;
+      transition: transform .25s .1s ease-in;
+      transition: transform .25s .1s ease-in, -webkit-transform .25s .1s ease-in; } }
   @media (min-width: 812px) {
     .box:hover:after {
-      transform: translateY(0); } }
+      -webkit-transform: translateY(0);
+              transform: translateY(0); } }
   @media (min-width: 812px) {
     .box:hover:before {
-      transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
       -webkit-backface-visibility: hidden;
       -webkit-transform: translateY(-100%) translateZ(0) scale(1, 1);
       transform: translateY(-100%) translateZ(0); } }
