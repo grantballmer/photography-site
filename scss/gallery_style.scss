@@ -176,13 +176,17 @@ ul {
 	margin: 0 1.5px;
 	background-color: #212121;
 	transform: scaleY(0.57);
+	animation-name: loading;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
-.bar__one {animation: loading 2.5s .25s infinite linear}
-.bar__two {animation: loading 2.5s .37s infinite linear}
-.bar__three {animation: loading 2.5s .49s infinite linear}
-.bar__four {animation: loading 2.5s .61s infinite linear}
-.bar__five {animation: loading 2.5s .73s infinite linear}
+.bar__one {animation-delay: .25s;}
+.bar__two {animation-delay: .37s}
+.bar__three {animation-delay: .49s}
+.bar__four {animation-delay: .61s}
+.bar__five {animation-delay: .73s}
 
 @keyframes loading {
 	0% {transform: scaleY(0.57);}

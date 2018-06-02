@@ -233,7 +233,7 @@ picture {
     background-image: url("../assets/maps/bagan.jpg"); } }
 
 .myanmar:before {
-  background-image: url("../assets/tiles/bagan_night.jpg");
+  background-image: url("../assets/tiles/bagan-temple.jpg");
   content: "Myanmar"; }
 
 @media (min-width: 812px) {
@@ -242,7 +242,7 @@ picture {
 
 .seoul:before {
   content: "Seoul";
-  background-image: url("../assets/tiles/seoul_namdaemun-med.jpg"); }
+  background-image: url("../assets/tiles/seoul-namdaemun-gate.jpg"); }
 
 @media (min-width: 812px) {
   .bali {
@@ -250,7 +250,7 @@ picture {
 
 .bali:before {
   content: "Bali";
-  background-image: url("../assets/tiles/ubud_legong-med.jpg"); }
+  background-image: url("../assets/tiles/bali-legong-dancer.jpg"); }
 
 @media (min-width: 812px) {
   .kaziranga {
@@ -266,7 +266,7 @@ picture {
 
 .bharatpur:before {
   content: "Bharatpur";
-  background-image: url("../assets/tiles/bharatpur_keoladeo-med.jpg"); }
+  background-image: url("../assets/tiles/bharatpur-keoladeo-park.jpg"); }
 
 @media (min-width: 812px) {
   .bundi {
@@ -274,14 +274,14 @@ picture {
 
 .bundi:before {
   content: "Bundi";
-  background-image: url("../assets/tiles/bundi_city-med.jpg"); }
+  background-image: url("../assets/tiles/bundi-blue-city.jpg"); }
 
 @media (min-width: 812px) {
   .pushkar {
     background-image: url("../assets/maps/pushkar.jpg"); } }
 
 .pushkar:before {
-  background-image: url("../assets/tiles/pushkar_man-med.jpg");
+  background-image: url("../assets/tiles/pushkar-man-beard.jpg");
   content: "Pushkar"; }
 
 @media (min-width: 812px) {
@@ -290,7 +290,7 @@ picture {
 
 .varanasi:before {
   content: "Varanasi";
-  background-image: url("../assets/tiles/varanasi_morning_aarti.jpg"); }
+  background-image: url("../assets/tiles/varanasi-morning-aarti.jpg"); }
 
 @media (min-width: 812px) {
   .jaipur {
@@ -298,7 +298,7 @@ picture {
 
 .jaipur:before {
   content: "Jaipur";
-  background-image: url("../assets/tiles/jaipur_jalMahal-med.jpg"); }
+  background-image: url("../assets/tiles/jaipur-jal-mahal.jpg"); }
 
 @media (min-width: 812px) {
   .sumatra {
@@ -306,7 +306,7 @@ picture {
 
 .sumatra:before {
   content: "Sumatra";
-  background-image: url("../assets/tiles/sumatra_orangutan-med.jpg"); }
+  background-image: url("../assets/tiles/sumatra-orangutan.jpg"); }
 
 @media (min-width: 812px) {
   .java {
@@ -314,7 +314,7 @@ picture {
 
 .java:before {
   content: "East Java";
-  background-image: url("../assets/tiles/bromo-med.jpg"); }
+  background-image: url("../assets/tiles/bromo-crater.jpg"); }
 
 @media (min-width: 812px) {
   .ranthambore {
@@ -323,7 +323,7 @@ picture {
 .ranthambore:before {
   content: "Ranthambore";
   font-size: 2rem;
-  background-image: url("../assets/tiles/ranthambore_tiger-med.jpg"); }
+  background-image: url("../assets/tiles/ranthambore-india-tiger.jpg"); }
 
 @media (min-width: 812px) {
   .agra {
@@ -332,7 +332,7 @@ picture {
 .agra:before {
   content: "Agra";
   font-size: 2rem;
-  background-image: url("../assets/tiles/taj_mahal-med.jpg"); }
+  background-image: url("../assets/tiles/agra-taj-mahal.jpg"); }
 
 @media (min-width: 812px) {
   .jinhae {
@@ -340,7 +340,7 @@ picture {
 
 .jinhae:before {
   content: "Jinhae";
-  background-image: url("../assets/tiles/jinhae_cherryBlossoms-med.jpg"); }
+  background-image: url("../assets/tiles/jinhae-cherry-blossoms.jpg"); }
 
 @media (min-width: 812px) {
   .jodhpur {
@@ -348,7 +348,7 @@ picture {
 
 .jodhpur:before {
   content: "Jodhpur";
-  background-image: url("../assets/tiles/jodhpur_clocktower-med.jpg"); }
+  background-image: url("../assets/tiles/jodhpur-clocktower.jpg"); }
 
 @media (min-width: 812px) {
   .danyang {
@@ -364,7 +364,7 @@ picture {
 
 .seoraksan:before {
   content: "Seoraksan";
-  background-image: url("../assets/tiles/seoraksan-med.jpg"); }
+  background-image: url("../assets/tiles/seoraksan-korea-park.jpg"); }
 
 @media (min-width: 812px) {
   .komodo {
@@ -372,7 +372,7 @@ picture {
 
 .komodo:before {
   content: "Komodo";
-  background-image: url("../assets/tiles/padar_island-med.jpg"); }
+  background-image: url("../assets/tiles/padar-island.jpg"); }
 
 @media (min-width: 812px) {
   .boseong {
@@ -380,7 +380,7 @@ picture {
 
 .boseong:before {
   content: "Boseong";
-  background-image: url("../assets/tiles/boseong_greenTeaFields-med.jpg"); }
+  background-image: url("../assets/tiles/boseong-green-tea.jpg"); }
 
 @media (min-width: 812px) {
   .amritsar {
@@ -388,7 +388,7 @@ picture {
 
 .amritsar:before {
   content: "Amritsar";
-  background-image: url("../assets/tiles/amritsar_golden_temple.jpg"); }
+  background-image: url("../assets/tiles/amritsar-golden-temple.jpg"); }
 
 @media (min-width: 812px) {
   .korea {
@@ -396,4 +396,4 @@ picture {
 
 .korea:before {
   content: "Korea";
-  background-image: url("../assets/tiles/korea_nami_island-med.jpg"); }
+  background-image: url("../assets/tiles/korea-nami-island.jpg"); }
