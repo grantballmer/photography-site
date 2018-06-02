@@ -252,16 +252,17 @@ ul {
 }
 
 .carousel-nav {
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 	display: none;
+	cursor: pointer;
 	@include wide-mobile {
-		margin: 0 10px 20px 10px;
+		margin: 0 10px 65px 10px;
 	}
 	@include desktop {
-		margin: 0 125px 20px 125px;
+		margin: 0 125px 65px 125px;
 	}
 	@include super {
-		margin: 0 175px 20px 175px;
+		margin: 0 175px 65px 175px;
 	}
 	
 	.slick-slide {

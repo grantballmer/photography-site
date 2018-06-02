@@ -193,17 +193,18 @@ ul {
   max-width: 100%; }
 
 .carousel-nav {
-  margin-bottom: 25px;
-  display: none; }
+  margin-bottom: 50px;
+  display: none;
+  cursor: pointer; }
   @media (min-width: 550px) {
     .carousel-nav {
-      margin: 0 10px 20px 10px; } }
+      margin: 0 10px 65px 10px; } }
   @media (min-width: 1024px) {
     .carousel-nav {
-      margin: 0 125px 20px 125px; } }
+      margin: 0 125px 65px 125px; } }
   @media (min-width: 1400px) {
     .carousel-nav {
-      margin: 0 175px 20px 175px; } }
+      margin: 0 175px 65px 175px; } }
   .carousel-nav .slick-slide {
     opacity: .6; }
   .carousel-nav .slick-center {

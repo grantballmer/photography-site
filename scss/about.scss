@@ -1,3 +1,32 @@
+$wide-mobile-width: 550px; 
+$tablet-width: 812px;
+$desktop-width: 1025px;
+$super-width: 1400px;
+
+@mixin wide-mobile {
+  @media (min-width: #{$wide-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin super {
+  @media (min-width: #{$super-width}) {
+    @content;
+  }
+}
+
 @mixin flex($justify, $align) {
   display: flex;
   justify-content: $justify;
@@ -12,17 +41,36 @@
 
 .container {
   @include flex(flex-start, center);
-  padding: 35px 25px;
+	flex-direction: column;
+	padding: 35px 100px;
+	@include tablet {
+		flex-direction: row;
+		padding: 35px 25px;
+	}
 }
 
 .half {
-  width: 50%;
+  width: 100%;
+	@include tablet {
+		width: 50%;
+	}
 }
 
 .bio {
-  padding: 0 100px;
-  font-size: 1.3rem;
-  text-indent: 20px;
+  margin-top: 25px;
+	font-size: 1.15rem;
+  text-indent: 20px; 
+	@include tablet {
+		margin-top: 0;
+		padding: 0 35px;
+		font-size: 1rem;
+	}
+	@include desktop {
+		margin-top: 0;
+		padding: 0 50px;
+		font-size: 1.3rem;
+	}
+	
 }
 
 img {

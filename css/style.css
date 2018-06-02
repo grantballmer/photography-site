@@ -239,7 +239,7 @@ picture {
 
 .kaziranga:before {
   content: "Kaziranga";
-  background-image: url("../assets/tiles/kaziranga_rhino-med.jpg"); }
+  background-image: url("../assets/tiles/kaziranga-rhino.jpg"); }
 
 @media (min-width: 812px) {
   .bharatpur {
