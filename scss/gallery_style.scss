@@ -180,6 +180,7 @@ ul {
 	animation-duration: 2.5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	animation-fill-mode: forwards;
 }
 
 .bar__one {animation-delay: .25s;}
