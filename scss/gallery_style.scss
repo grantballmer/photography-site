@@ -163,11 +163,23 @@ ul {
 }
 
 .loader {
-	@include flex(center, center);
 	position: absolute;
 	top: 35%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.aperture {
+	@include wide-mobile {
+		display: none;
+	}
+}
+
+.bars {
+	display: none;
+	@include wide-mobile {
+		@include flex(center, center);
+	}
 }
 
 .bar {

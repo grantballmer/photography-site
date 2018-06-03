@@ -49,10 +49,7 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  user-select: none; }
   @media (min-width: 812px) {
     ul {
       width: inherit;
@@ -107,80 +104,59 @@ ul {
   z-index: 2; }
 
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 35%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  transform: translateX(-50%); }
+
+@media (min-width: 550px) {
+  .aperture {
+    display: none; } }
+
+.bars {
+  display: none; }
+  @media (min-width: 550px) {
+    .bars {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .bar {
   width: 12px;
   height: 105px;
   margin: 0 1.5px;
   background-color: #212121;
-  -webkit-transform: scaleY(0.57);
-          transform: scaleY(0.57);
-  -webkit-animation-name: loading;
-          animation-name: loading;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+  transform: scaleY(0.57);
+  animation-name: loading;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
 
 .bar__one {
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s; }
+  animation-delay: .25s; }
 
 .bar__two {
-  -webkit-animation-delay: .37s;
-          animation-delay: .37s; }
+  animation-delay: .37s; }
 
 .bar__three {
-  -webkit-animation-delay: .49s;
-          animation-delay: .49s; }
+  animation-delay: .49s; }
 
 .bar__four {
-  -webkit-animation-delay: .61s;
-          animation-delay: .61s; }
+  animation-delay: .61s; }
 
 .bar__five {
-  -webkit-animation-delay: .73s;
-          animation-delay: .73s; }
-
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); }
-  10% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
-  20% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); }
-  100% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); } }
+  animation-delay: .73s; }
 
 @keyframes loading {
   0% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); }
+    transform: scaleY(0.57); }
   10% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
+    transform: scaleY(1); }
   20% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); }
+    transform: scaleY(0.57); }
   100% {
-    -webkit-transform: scaleY(0.57);
-            transform: scaleY(0.57); } }
+    transform: scaleY(0.57); } }
 
 .wrapper {
   display: none;
@@ -202,8 +178,7 @@ ul {
   opacity: 1;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 4px;
   z-index: 2;
