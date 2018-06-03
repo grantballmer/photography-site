@@ -109,55 +109,6 @@ ul {
   left: 50%;
   transform: translateX(-50%); }
 
-@media (min-width: 550px) {
-  .aperture {
-    display: none; } }
-
-.bars {
-  display: none; }
-  @media (min-width: 550px) {
-    .bars {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-
-.bar {
-  width: 12px;
-  height: 105px;
-  margin: 0 1.5px;
-  background-color: #212121;
-  transform: scaleY(0.57);
-  animation-name: loading;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards; }
-
-.bar__one {
-  animation-delay: .25s; }
-
-.bar__two {
-  animation-delay: .37s; }
-
-.bar__three {
-  animation-delay: .49s; }
-
-.bar__four {
-  animation-delay: .61s; }
-
-.bar__five {
-  animation-delay: .73s; }
-
-@keyframes loading {
-  0% {
-    transform: scaleY(0.57); }
-  10% {
-    transform: scaleY(1); }
-  20% {
-    transform: scaleY(0.57); }
-  100% {
-    transform: scaleY(0.57); } }
-
 .wrapper {
   display: none;
   margin: 50px 10px 10px 10px;
