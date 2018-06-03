@@ -42,7 +42,7 @@ $super-width: 1400px;
 .container {
   @include flex(flex-start, center);
 	flex-direction: column;
-	padding: 35px 100px;
+	padding: 35px 25px;
 	@include tablet {
 		flex-direction: row;
 		padding: 35px 25px;
