@@ -193,7 +193,8 @@ ul {
 	}
 	
 	&__text {
-	  color: rgb(87, 87, 87);
+		@include flex(center, center);
+		color: rgb(87, 87, 87);
 	}
 	
   }
