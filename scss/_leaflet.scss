@@ -1,51 +1,3 @@
-$wide-mobile-width: 550px; 
-$tablet-width: 812px;
-$desktop-width: 1024px;
-$super-width: 1400px;
-
-$border-curve: 25px;
-
-@mixin wide-mobile {
-  @media (min-width: #{$wide-mobile-width}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@mixin super {
-  @media (min-width: #{$super-width}) {
-    @content;
-  }
-}
-
-@mixin flex($justify, $align) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .wrapper {
   height: auto;
   position: relative;
@@ -71,7 +23,6 @@ html, body {
 	@include tablet {
 		width: 150px;
 	}
-  //right: 0;
   
   ul {
     height: 50%;

@@ -40,6 +40,8 @@ html, body {
   height: 100%;
 }
 
+@import '_leaflet';
+
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +61,6 @@ nav {
 	text-align: center;
 	transition: background-color .3s linear;
 	z-index: 2;
-//	font-family: "Lato";
 	&:hover {
 		background-color: rgba(0,0,0, .3);
 	}
@@ -81,6 +82,8 @@ h1 {
 
 .fa-bars {
 	display: block;
+	// height: 30px;
+	color: white;
 	font-size: 2rem;
 	cursor: pointer;
 	@include tablet {
