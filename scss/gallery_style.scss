@@ -193,6 +193,8 @@ ul {
 	}
 	
 	&__text {
+		height: 100%;
+		width: 100%;
 		@include flex(center, center);
 		color: rgb(87, 87, 87);
 	}

@@ -41,8 +41,8 @@ $(document).ready(function() {
         }
       ]  
     });
-		// $(".loader").hide();
-    // $(".wrapper").show();
+		$(".loader").hide();
+    $(".wrapper").show();
 		if (window.innerWidth > 550) {
 			$(".carousel-nav").show(); 
 		};
