@@ -1,296 +1,920 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Bagan Gallery</title>
+    <meta
+      name="description"
+      content="Grant Ballmer Travel Photography Page for Bagan, Myanmar."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Bagan Gallery</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="icon" type="image/png" href="../assets/icon/camera-icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
-</head>
+    <link rel="icon" type="image/png" href="../assets/icon/camera-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css" />
+  </head>
 
-<body>
-	
-	<nav>
-		<h1><a href="../">Grant Ballmer<br><span>Photography</span></a></h1>
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<ul>
-			<li><a href="../about/">About</a></li>
-			<li><a href="../#mapid">Map</a></li>
-			<li><a href="../#grid">Places</a></li>
-			<li><a href="https://www.instagram.com/grantballmer/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		</ul>	
-	</nav>
-	
-	<div class="loader">
-		<div class="loader__rotate"></div>
-		<div class="loader__text">loading...</div>
-	</div>
-	
-	<div class="wrapper">
-		<div class="arrows arrows__left">
-			<i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
-		</div>
-		<div class="arrows arrows__right">
-			<i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
-		</div>
-		<div class="carousel">
+  <body>
+    <nav>
+      <h1>
+        <a href="../">Grant Ballmer<br /><span>Photography</span></a>
+      </h1>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../#mapid">Map</a></li>
+        <li><a href="../#grid">Places</a></li>
+        <li>
+          <a href="https://www.instagram.com/grantballmer/" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temple_night.jpg 1400w, ../assets/bagan/high/temple_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temple_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temple_night.jpg" alt="Bagan temple lit up at night.">
-			</picture>
+    <div class="loader">
+      <div class="loader__rotate"></div>
+      <div class="loader__text">loading...</div>
+    </div>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/girl.jpg 1400w, ../assets/bagan/high/girl.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/girl.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/girl.jpg" alt="Little girl eating corn">
-			</picture>
+    <div class="wrapper">
+      <div class="arrows arrows__left">
+        <i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrows arrows__right">
+        <i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
+      </div>
+      <div class="carousel">
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temple_night.jpg 1400w,
+              ../assets/bagan/high/temple_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temple_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temple_night.jpg"
+            alt="Bagan temple lit up at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/cooking.jpg 1400w, ../assets/bagan/high/cooking.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/cooking.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/cooking.jpg" alt="Cooking in Bagan market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/girl.jpg 1400w,
+              ../assets/bagan/high/girl.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/girl.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/girl.jpg"
+            alt="Little girl eating corn"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/bagan_temple.jpg 1400w, ../assets/bagan/high/bagan_temple.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/bagan_temple.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/bagan_temple.jpg" alt="Bagan temple">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/cooking.jpg 1400w,
+              ../assets/bagan/high/cooking.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/cooking.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/cooking.jpg"
+            alt="Cooking in Bagan market."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples_day.jpg 1400w, ../assets/bagan/high/temples_day.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples_day.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples_day.jpg" alt="Row of 5 temples at different depths.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/bagan_temple.jpg 1400w,
+              ../assets/bagan/high/bagan_temple.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/bagan_temple.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/bagan_temple.jpg"
+            alt="Bagan temple"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/market_knives.jpg 1400w, ../assets/bagan/high/market_knives.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/market_knives.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/market_knives.jpg" alt="Assortment of knives on display at market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples_day.jpg 1400w,
+              ../assets/bagan/high/temples_day.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples_day.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples_day.jpg"
+            alt="Row of 5 temples at different depths."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/farmer_temples.jpg 1400w, ../assets/bagan/high/farmer_temples.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/farmer_temples.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/farmer_temples.jpg" alt="Farmer plowing field in front of temples.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/market_knives.jpg 1400w,
+              ../assets/bagan/high/market_knives.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/market_knives.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/market_knives.jpg"
+            alt="Assortment of knives on display at market."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/hiding.jpg 1400w, ../assets/bagan/high/hiding.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/hiding.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/hiding.jpg" alt="Little boy hiding in field.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/farmer_temples.jpg 1400w,
+              ../assets/bagan/high/farmer_temples.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/farmer_temples.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/farmer_temples.jpg"
+            alt="Farmer plowing field in front of temples."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples_sunset.jpg 1400w, ../assets/bagan/high/temples_sunset.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples_sunset.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples_sunset.jpg" alt="Row of 5 temples at different depths.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/hiding.jpg 1400w,
+              ../assets/bagan/high/hiding.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/hiding.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/hiding.jpg"
+            alt="Little boy hiding in field."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/overgrown.jpg 1400w, ../assets/bagan/high/overgrown.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/overgrown.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/overgrown.jpg" alt="Overgrown field.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples_sunset.jpg 1400w,
+              ../assets/bagan/high/temples_sunset.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples_sunset.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples_sunset.jpg"
+            alt="Row of 5 temples at different depths."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/market_woman.jpg 1400w, ../assets/bagan/high/market_woman.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/market_woman.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/market_woman.jpg" alt="Woman selling books at night in market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/overgrown.jpg 1400w,
+              ../assets/bagan/high/overgrown.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/overgrown.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/overgrown.jpg"
+            alt="Overgrown field."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/farmer_temple_middle.jpg 1400w, ../assets/bagan/high/farmer_temple_middle.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/farmer_temple_middle.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/farmer_temple_middle.jpg" alt="Farmer plowing in field of foreground, with temple in back.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/market_woman.jpg 1400w,
+              ../assets/bagan/high/market_woman.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/market_woman.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/market_woman.jpg"
+            alt="Woman selling books at night in market."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/oxen.jpg 1400w, ../assets/bagan/high/oxen.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/oxen.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/oxen.jpg" alt="Oxen grazing in field.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/farmer_temple_middle.jpg 1400w,
+              ../assets/bagan/high/farmer_temple_middle.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/farmer_temple_middle.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/farmer_temple_middle.jpg"
+            alt="Farmer plowing in field of foreground, with temple in back."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/market_meal.jpg 1400w, ../assets/bagan/high/market_meal.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/market_meal.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/market_meal.jpg" alt="Group of people enjoying a meal at the market in Bagan.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/oxen.jpg 1400w,
+              ../assets/bagan/high/oxen.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/oxen.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/oxen.jpg"
+            alt="Oxen grazing in field."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/meat.jpg 1400w, ../assets/bagan/high/meat.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/meat.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/meat.jpg" alt="Woman chopping up meat in Bagan market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/market_meal.jpg 1400w,
+              ../assets/bagan/high/market_meal.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/market_meal.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/market_meal.jpg"
+            alt="Group of people enjoying a meal at the market in Bagan."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/wagon.jpg 1400w, ../assets/bagan/high/wagon.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/wagon.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/wagon.jpg" alt="Wagon coming toward camera along dirt path.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/meat.jpg 1400w,
+              ../assets/bagan/high/meat.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/meat.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/meat.jpg"
+            alt="Woman chopping up meat in Bagan market."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/man_carrying.jpg 1400w, ../assets/bagan/high/man_carrying.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/man_carrying.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/man_carrying.jpg" alt="Man carrying basket of tall corn stalks on shoulders.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/wagon.jpg 1400w,
+              ../assets/bagan/high/wagon.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/wagon.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/wagon.jpg"
+            alt="Wagon coming toward camera along dirt path."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/four_temples.jpg 1400w, ../assets/bagan/high/four_temples.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/four_temples.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/four_temples.jpg" alt="Four temples in Bagan">
-			</picture> 
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/man_carrying.jpg 1400w,
+              ../assets/bagan/high/man_carrying.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/man_carrying.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/man_carrying.jpg"
+            alt="Man carrying basket of tall corn stalks on shoulders."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/balls.jpg 1400w, ../assets/bagan/high/balls.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/balls.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/balls.jpg" alt="Chinlone balls">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/four_temples.jpg 1400w,
+              ../assets/bagan/high/four_temples.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/four_temples.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/four_temples.jpg"
+            alt="Four temples in Bagan"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/bananas.jpg 1400w, ../assets/bagan/high/bananas.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/bananas.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/bananas.jpg" alt="Bananas hanging by strings under fluorescent lighting.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/balls.jpg 1400w,
+              ../assets/bagan/high/balls.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/balls.jpg"
+            media="(min-width: 550px)"
+          />
+          <img src="../assets/bagan/mobile/balls.jpg" alt="Chinlone balls" />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/inle_boats.jpg 1400w, ../assets/bagan/high/inle_boats.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/inle_boats.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/inle_boats.jpg" alt="A row of boat engines lined up.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/bananas.jpg 1400w,
+              ../assets/bagan/high/bananas.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/bananas.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/bananas.jpg"
+            alt="Bananas hanging by strings under fluorescent lighting."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/lacquerware.jpg 1400w, ../assets/bagan/high/lacquerware.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/lacquerware.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/lacquerware.jpg" alt="Assortment of lacquerware.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/inle_boats.jpg 1400w,
+              ../assets/bagan/high/inle_boats.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/inle_boats.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/inle_boats.jpg"
+            alt="A row of boat engines lined up."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temple_cursed.jpg 1400w, ../assets/bagan/high/temple_cursed.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temple_cursed.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temple_cursed.jpg" alt="Temple in foreground and background">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/lacquerware.jpg 1400w,
+              ../assets/bagan/high/lacquerware.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/lacquerware.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/lacquerware.jpg"
+            alt="Assortment of lacquerware."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temple_front.jpg 1400w, ../assets/bagan/high/temple_front.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temple_front.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temple_front.jpg" alt="Wide angle of Bagan temple">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temple_cursed.jpg 1400w,
+              ../assets/bagan/high/temple_cursed.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temple_cursed.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temple_cursed.jpg"
+            alt="Temple in foreground and background"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/bagan_temples_day.jpg 1400w, ../assets/bagan/high/bagan_temples_day.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/bagan_temples_day.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/bagan_temples_day.jpg" alt="Bagan landscape">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temple_front.jpg 1400w,
+              ../assets/bagan/high/temple_front.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temple_front.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temple_front.jpg"
+            alt="Wide angle of Bagan temple"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temple_middle.jpg 1400w, ../assets/bagan/high/temple_middle.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temple_middle.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temple_middle.jpg" alt="Two temples in the middle of shot">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/bagan_temples_day.jpg 1400w,
+              ../assets/bagan/high/bagan_temples_day.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/bagan_temples_day.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/bagan_temples_day.jpg"
+            alt="Bagan landscape"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples_right.jpg 1400w, ../assets/bagan/high/temples_right.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples_right.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples_right.jpg" alt="Temples in the forest">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temple_middle.jpg 1400w,
+              ../assets/bagan/high/temple_middle.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temple_middle.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temple_middle.jpg"
+            alt="Two temples in the middle of shot"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/puppeteer.jpg 1400w, ../assets/bagan/high/puppeteer.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/puppeteer.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/puppeteer.jpg" alt="Puppet maker">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples_right.jpg 1400w,
+              ../assets/bagan/high/temples_right.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples_right.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples_right.jpg"
+            alt="Temples in the forest"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/bagan_fields.jpg 1400w, ../assets/bagan/high/bagan_fields.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/bagan_fields.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/bagan_fields.jpg" alt="farmer plowing green fields">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/puppeteer.jpg 1400w,
+              ../assets/bagan/high/puppeteer.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/puppeteer.jpg"
+            media="(min-width: 550px)"
+          />
+          <img src="../assets/bagan/mobile/puppeteer.jpg" alt="Puppet maker" />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/market.jpg 1400w, ../assets/bagan/high/market.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/market.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/market.jpg" alt="Market in Bagan">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/bagan_fields.jpg 1400w,
+              ../assets/bagan/high/bagan_fields.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/bagan_fields.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/bagan_fields.jpg"
+            alt="farmer plowing green fields"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temple_middle_sun.jpg 1400w, ../assets/bagan/high/temple_middle_sun.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temple_middle_sun.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temple_middle_sun.jpg" alt="Daylight hitting temple">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/market.jpg 1400w,
+              ../assets/bagan/high/market.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/market.jpg"
+            media="(min-width: 550px)"
+          />
+          <img src="../assets/bagan/mobile/market.jpg" alt="Market in Bagan" />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples.jpg 1400w, ../assets/bagan/high/temples.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples.jpg" alt="Temples stretching from foreground to background.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temple_middle_sun.jpg 1400w,
+              ../assets/bagan/high/temple_middle_sun.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temple_middle_sun.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temple_middle_sun.jpg"
+            alt="Daylight hitting temple"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples_haze.jpg 1400w, ../assets/bagan/high/temples_haze.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples_haze.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples_haze.jpg" alt="Temples in the haze.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples.jpg 1400w,
+              ../assets/bagan/high/temples.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples.jpg"
+            alt="Temples stretching from foreground to background."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/bagan/desktop/temples_many.jpg 1400w, ../assets/bagan/high/temples_many.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/bagan/tablet/temples_many.jpg" media="(min-width: 550px)">
-				<img src="../assets/bagan/mobile/temples_many.jpg" alt="Row of 5 temples at different depths.">
-			</picture>
-		</div>
-	</div>
-	<div class="carousel-nav">
-		<img srcset="../assets/bagan/slider-nav/small/temple_night.jpg 240w, ../assets/bagan/slider-nav/big/temple_night.jpg 315w" alt="Bagan temples at night">
-		<img srcset="../assets/bagan/slider-nav/small/girl.jpg 240w, ../assets/bagan/slider-nav/big/girl.jpg 315w" alt="Girl eating corn">
-		<img srcset="../assets/bagan/slider-nav/small/cooking.jpg 240w, ../assets/bagan/slider-nav/big/cooking.jpg 315w" alt="Cooking in Bagan market.">
-		<img srcset="../assets/bagan/slider-nav/small/bagan_temple.jpg 240w, ../assets/bagan/slider-nav/big/bagan_temple.jpg 315w" alt="Bagan temple">
-		<img srcset="../assets/bagan/slider-nav/small/temples_day.jpg 240w, ../assets/bagan/slider-nav/big/temples_day.jpg 315w" alt="Bagan temples">
-		<img srcset="../assets/bagan/slider-nav/small/market_knives.jpg 240w, ../assets/bagan/slider-nav/big/market_knives.jpg 315w" alt="Assortment of knives on display at market.">
-		<img srcset="../assets/bagan/slider-nav/small/farmer_temples.jpg 240w, ../assets/bagan/slider-nav/big/farmer_temples.jpg 315w" alt="Farmer plowing field in front of temples.">
-		<img srcset ="../assets/bagan/slider-nav/small/hiding.jpg 240w, ../assets/bagan/slider-nav/big/hiding.jpg 315w" alt="Little boy hiding in field.">
-		<img srcset="../assets/bagan/slider-nav/small/temples_sunset.jpg 240w, ../assets/bagan/slider-nav/big/temples_sunset.jpg 315w" alt="Row of 5 temples at different depths.">
-		<img srcset="../assets/bagan/slider-nav/small/overgrown.jpg 240w, ../assets/bagan/slider-nav/big/overgrown.jpg 315w" alt="Overgrown field.">
-		<img srcset="../assets/bagan/slider-nav/small/market_woman.jpg 240w, ../assets/bagan/slider-nav/big/market_woman.jpg 315w" alt="Woman selling books at night in market.">
-		<img srcset="../assets/bagan/slider-nav/small/farmer_temple_middle.jpg 240w, ../assets/bagan/slider-nav/big/farmer_temple_middle.jpg 315w" alt="Farmer plowing in field of foreground, with temple in back.">
-		<img srcset="../assets/bagan/slider-nav/small/oxen.jpg 240w, ../assets/bagan/slider-nav/big/oxen.jpg 315w" alt="Oxen grazing in field.">
-		<img srcset="../assets/bagan/slider-nav/small/market_meal.jpg 240w, ../assets/bagan/slider-nav/big/market_meal.jpg 315w" alt="Group of people enjoying a meal at the market in Bagan.">
-		<img srcset="../assets/bagan/slider-nav/small/meat.jpg 240w, ../assets/bagan/slider-nav/big/meat.jpg 315w" alt="Woman chopping up meat in Bagan market.">
-		<img srcset="../assets/bagan/slider-nav/small/wagon.jpg 240w, ../assets/bagan/slider-nav/big/wagon.jpg 315w" alt="Wagon coming toward camera along dirt path.">
-		<img srcset="../assets/bagan/slider-nav/small/man_carrying.jpg 240w, ../assets/bagan/slider-nav/big/man_carrying.jpg 315w" alt="Man carrying basket of tall corn stalks on shoulders.">
-		<img srcset="../assets/bagan/slider-nav/small/four_temples.jpg 240w, ../assets/bagan/slider-nav/big/four_temples.jpg 315w" alt="Four temples in Bagan.">
-		<img srcset="../assets/bagan/slider-nav/small/balls.jpg 240w, ../assets/bagan/slider-nav/big/balls.jpg 315w" alt="Chinlone balls.">
-		<img srcset="../assets/bagan/slider-nav/small/bananas.jpg 240w, ../assets/bagan/slider-nav/big/bananas.jpg 315w" alt="Bananas hanging by strings under fluorescent lighting.">
-		<img srcset="../assets/bagan/slider-nav/small/inle_boats.jpg 240w, ../assets/bagan/slider-nav/big/inle_boats.jpg 315w" alt="A row of boat engines lined up.">
-		<img srcset="../assets/bagan/slider-nav/small/lacquerware.jpg 240w, ../assets/bagan/slider-nav/big/lacquerware.jpg 315w" alt="Assortment of lacquerware">
-		<img srcset="../assets/bagan/slider-nav/small/temple_cursed.jpg 240w, ../assets/bagan/slider-nav/big/temple_cursed.jpg 315w" alt="Temple in foreground and background">
-		<img srcset="../assets/bagan/slider-nav/small/temple_front.jpg 240w, ../assets/bagan/slider-nav/big/temple_front.jpg 315w" alt="Wide angle of Bagan temple">
-		<img srcset="../assets/bagan/slider-nav/small/bagan_temples_day.jpg 240w, ../assets/bagan/slider-nav/big/bagan_temples_day.jpg 315w" alt="Bagan landscape">
-		<img srcset="../assets/bagan/slider-nav/small/temple_middle.jpg 240w, ../assets/bagan/slider-nav/big/temple_middle.jpg 315w" alt="Two temples in the middle of shot">
-		<img srcset="../assets/bagan/slider-nav/small/temples_right.jpg 240w, ../assets/bagan/slider-nav/big/temples_right.jpg 315w" alt="Temples in the forest">
-		<img srcset="../assets/bagan/slider-nav/small/puppeteer.jpg 240w, ../assets/bagan/slider-nav/big/puppeteer.jpg 315w" alt="Puppet maker">
-		<img srcset="../assets/bagan/slider-nav/small/bagan_fields.jpg 240w, ../assets/bagan/slider-nav/big/bagan_fields.jpg 315w" alt="farmer plowing green fields">
-		<img srcset="../assets/bagan/slider-nav/small/market.jpg 240w, ../assets/bagan/slider-nav/big/market.jpg 315w" alt="Market in Bagan">
-		<img srcset="../assets/bagan/slider-nav/small/temple_middle_sun.jpg 240w, ../assets/bagan/slider-nav/big/temple_middle_sun.jpg 315w" alt="Daylight hitting temple">
-		<img srcset="../assets/bagan/slider-nav/small/temples.jpg 240w, ../assets/bagan/slider-nav/big/temples.jpg 315w" alt="Temples stretching from foreground to background.">
-		<img srcset="../assets/bagan/slider-nav/small/temples_haze.jpg 240w, ../assets/bagan/slider-nav/big/temples_haze.jpg 315w" alt="Temples in the haze.">
-		<img srcset="../assets/bagan/slider-nav/small/temples_many.jpg 240w, ../assets/bagan/slider-nav/big/temples_many.jpg 315w" alt="Row of 5 temples at different depths.">
-	
-	</div>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="../scripts/galleries.js"></script>
-</body>
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples_haze.jpg 1400w,
+              ../assets/bagan/high/temples_haze.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples_haze.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples_haze.jpg"
+            alt="Temples in the haze."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/bagan/desktop/temples_many.jpg 1400w,
+              ../assets/bagan/high/temples_many.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/bagan/tablet/temples_many.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/bagan/mobile/temples_many.jpg"
+            alt="Row of 5 temples at different depths."
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temple_night.jpg 240w,
+          ../assets/bagan/slider-nav/big/temple_night.jpg   315w
+        "
+        alt="Bagan temples at night"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/girl.jpg 240w,
+          ../assets/bagan/slider-nav/big/girl.jpg   315w
+        "
+        alt="Girl eating corn"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/cooking.jpg 240w,
+          ../assets/bagan/slider-nav/big/cooking.jpg   315w
+        "
+        alt="Cooking in Bagan market."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/bagan_temple.jpg 240w,
+          ../assets/bagan/slider-nav/big/bagan_temple.jpg   315w
+        "
+        alt="Bagan temple"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples_day.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples_day.jpg   315w
+        "
+        alt="Bagan temples"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/market_knives.jpg 240w,
+          ../assets/bagan/slider-nav/big/market_knives.jpg   315w
+        "
+        alt="Assortment of knives on display at market."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/farmer_temples.jpg 240w,
+          ../assets/bagan/slider-nav/big/farmer_temples.jpg   315w
+        "
+        alt="Farmer plowing field in front of temples."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/hiding.jpg 240w,
+          ../assets/bagan/slider-nav/big/hiding.jpg   315w
+        "
+        alt="Little boy hiding in field."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples_sunset.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples_sunset.jpg   315w
+        "
+        alt="Row of 5 temples at different depths."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/overgrown.jpg 240w,
+          ../assets/bagan/slider-nav/big/overgrown.jpg   315w
+        "
+        alt="Overgrown field."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/market_woman.jpg 240w,
+          ../assets/bagan/slider-nav/big/market_woman.jpg   315w
+        "
+        alt="Woman selling books at night in market."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/farmer_temple_middle.jpg 240w,
+          ../assets/bagan/slider-nav/big/farmer_temple_middle.jpg   315w
+        "
+        alt="Farmer plowing in field of foreground, with temple in back."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/oxen.jpg 240w,
+          ../assets/bagan/slider-nav/big/oxen.jpg   315w
+        "
+        alt="Oxen grazing in field."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/market_meal.jpg 240w,
+          ../assets/bagan/slider-nav/big/market_meal.jpg   315w
+        "
+        alt="Group of people enjoying a meal at the market in Bagan."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/meat.jpg 240w,
+          ../assets/bagan/slider-nav/big/meat.jpg   315w
+        "
+        alt="Woman chopping up meat in Bagan market."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/wagon.jpg 240w,
+          ../assets/bagan/slider-nav/big/wagon.jpg   315w
+        "
+        alt="Wagon coming toward camera along dirt path."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/man_carrying.jpg 240w,
+          ../assets/bagan/slider-nav/big/man_carrying.jpg   315w
+        "
+        alt="Man carrying basket of tall corn stalks on shoulders."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/four_temples.jpg 240w,
+          ../assets/bagan/slider-nav/big/four_temples.jpg   315w
+        "
+        alt="Four temples in Bagan."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/balls.jpg 240w,
+          ../assets/bagan/slider-nav/big/balls.jpg   315w
+        "
+        alt="Chinlone balls."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/bananas.jpg 240w,
+          ../assets/bagan/slider-nav/big/bananas.jpg   315w
+        "
+        alt="Bananas hanging by strings under fluorescent lighting."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/inle_boats.jpg 240w,
+          ../assets/bagan/slider-nav/big/inle_boats.jpg   315w
+        "
+        alt="A row of boat engines lined up."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/lacquerware.jpg 240w,
+          ../assets/bagan/slider-nav/big/lacquerware.jpg   315w
+        "
+        alt="Assortment of lacquerware"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temple_cursed.jpg 240w,
+          ../assets/bagan/slider-nav/big/temple_cursed.jpg   315w
+        "
+        alt="Temple in foreground and background"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temple_front.jpg 240w,
+          ../assets/bagan/slider-nav/big/temple_front.jpg   315w
+        "
+        alt="Wide angle of Bagan temple"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/bagan_temples_day.jpg 240w,
+          ../assets/bagan/slider-nav/big/bagan_temples_day.jpg   315w
+        "
+        alt="Bagan landscape"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temple_middle.jpg 240w,
+          ../assets/bagan/slider-nav/big/temple_middle.jpg   315w
+        "
+        alt="Two temples in the middle of shot"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples_right.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples_right.jpg   315w
+        "
+        alt="Temples in the forest"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/puppeteer.jpg 240w,
+          ../assets/bagan/slider-nav/big/puppeteer.jpg   315w
+        "
+        alt="Puppet maker"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/bagan_fields.jpg 240w,
+          ../assets/bagan/slider-nav/big/bagan_fields.jpg   315w
+        "
+        alt="farmer plowing green fields"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/market.jpg 240w,
+          ../assets/bagan/slider-nav/big/market.jpg   315w
+        "
+        alt="Market in Bagan"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temple_middle_sun.jpg 240w,
+          ../assets/bagan/slider-nav/big/temple_middle_sun.jpg   315w
+        "
+        alt="Daylight hitting temple"
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples.jpg   315w
+        "
+        alt="Temples stretching from foreground to background."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples_haze.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples_haze.jpg   315w
+        "
+        alt="Temples in the haze."
+      />
+      <img
+        srcset="
+          ../assets/bagan/slider-nav/small/temples_many.jpg 240w,
+          ../assets/bagan/slider-nav/big/temples_many.jpg   315w
+        "
+        alt="Row of 5 temples at different depths."
+      />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../scripts/galleries.js"></script>
+  </body>
 </html>

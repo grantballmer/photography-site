@@ -1,228 +1,676 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Jodhpur Gallery</title>
+    <meta
+      name="description"
+      content="Grant Ballmer Photography page for Jodhpur, India"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Jodhpur Gallery</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="icon" type="image/png" href="../assets/icon/camera-icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
-</head>
+    <link rel="icon" type="image/png" href="../assets/icon/camera-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css" />
+  </head>
 
-<body>
-	
-	<nav>
-		<h1><a href="../">Grant Ballmer<br><span>Photography</span></a></h1>
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<ul>
-			<li><a href="../about/">About</a></li>
-			<li><a href="../#mapid">Map</a></li>
-			<li><a href="../#grid">Places</a></li>
-			<li><a href="https://www.instagram.com/grantballmer/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		</ul>	
-	</nav>
-	
-	<div class="loader">
-		<div class="loader__rotate"></div>
-		<div class="loader__text">loading...</div>
-	</div>
-	
-	<div class="wrapper">
-		<div class="arrows arrows__left">
-			<i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
-		</div>
-		<div class="arrows arrows__right">
-			<i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
-		</div>
-		<div class="carousel">
+  <body>
+    <nav>
+      <h1>
+        <a href="../">Grant Ballmer<br /><span>Photography</span></a>
+      </h1>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../#mapid">Map</a></li>
+        <li><a href="../#grid">Places</a></li>
+        <li>
+          <a href="https://www.instagram.com/grantballmer/" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/clocktower_night.jpg 1400w, ../assets/jodhpur/high/clocktower_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/clocktower_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/clocktower_night.jpg" alt="Clocktower at night.">
-			</picture>
+    <div class="loader">
+      <div class="loader__rotate"></div>
+      <div class="loader__text">loading...</div>
+    </div>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_pano.jpg 1400w, ../assets/jodhpur/high/fort_pano.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_pano.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_pano.jpg" alt="Panorama of Jodhpur Fort.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_walls.jpg 1400w, ../assets/jodhpur/high/fort_walls.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_walls.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_walls.jpg" alt="Looking up at 4 walls of Jodhpur Fort.">
-			</picture>
+    <div class="wrapper">
+      <div class="arrows arrows__left">
+        <i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrows arrows__right">
+        <i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
+      </div>
+      <div class="carousel">
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/clocktower_night.jpg 1400w,
+              ../assets/jodhpur/high/clocktower_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/clocktower_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/clocktower_night.jpg"
+            alt="Clocktower at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/city_sunset_close.jpg 1400w, ../assets/jodhpur/high/city_sunset_close.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/city_sunset_close.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/city_sunset_close.jpg" alt="Telephoto view of 'Blue City'.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_pano.jpg 1400w,
+              ../assets/jodhpur/high/fort_pano.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_pano.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_pano.jpg"
+            alt="Panorama of Jodhpur Fort."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/jaswant.jpg 1400w, ../assets/jodhpur/high/jaswant.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/jaswant.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/jaswant.jpg" alt="Jaswant Thada.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/jaswant_hall.jpg 1400w, ../assets/jodhpur/high/jaswant_hall.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/jaswant_hall.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/jaswant_hall.jpg" alt="Hall of Jaswant Thada.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_walls.jpg 1400w,
+              ../assets/jodhpur/high/fort_walls.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_walls.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_walls.jpg"
+            alt="Looking up at 4 walls of Jodhpur Fort."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/kids_running.jpg 1400w, ../assets/jodhpur/high/kids_running.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/kids_running.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/kids_running.jpg" alt="Street scene.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/city_sunset_close.jpg 1400w,
+              ../assets/jodhpur/high/city_sunset_close.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/city_sunset_close.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/city_sunset_close.jpg"
+            alt="Telephoto view of 'Blue City'."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/statue.jpg 1400w, ../assets/jodhpur/high/statue.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/statue.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/statue.jpg" alt="Rao Jodha Ji Statue.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/jaswant.jpg 1400w,
+              ../assets/jodhpur/high/jaswant.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/jaswant.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/jaswant.jpg"
+            alt="Jaswant Thada."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_morning.jpg 1400w, ../assets/jodhpur/high/fort_morning.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_morning.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_morning.jpg" alt="Morning light hitting fort.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/jaswant_hall.jpg 1400w,
+              ../assets/jodhpur/high/jaswant_hall.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/jaswant_hall.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/jaswant_hall.jpg"
+            alt="Hall of Jaswant Thada."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/morning_buildings.jpg 1400w, ../assets/jodhpur/high/morning_buildings.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/morning_buildings.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/morning_buildings.jpg" alt="Morning lights hitting buildings.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/kids_running.jpg 1400w,
+              ../assets/jodhpur/high/kids_running.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/kids_running.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/kids_running.jpg"
+            alt="Street scene."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/city.jpg 1400w, ../assets/jodhpur/high/city.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/city.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/city.jpg" alt="The 'Blue City' of Jodhpur.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/statue.jpg 1400w,
+              ../assets/jodhpur/high/statue.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/statue.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/statue.jpg"
+            alt="Rao Jodha Ji Statue."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/street_light.jpg 1400w, ../assets/jodhpur/high/street_light.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/street_light.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/street_light.jpg" alt="Evening street scene.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_morning.jpg 1400w,
+              ../assets/jodhpur/high/fort_morning.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_morning.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_morning.jpg"
+            alt="Morning light hitting fort."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_wall.jpg 1400w, ../assets/jodhpur/high/fort_wall.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_wall.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_wall.jpg" alt="Afternoon light hitting inner-walls of fort.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/morning_buildings.jpg 1400w,
+              ../assets/jodhpur/high/morning_buildings.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/morning_buildings.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/morning_buildings.jpg"
+            alt="Morning lights hitting buildings."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_windows.jpg 1400w, ../assets/jodhpur/high/fort_windows.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_windows.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_windows.jpg" alt="Diagonal light on fort wall.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/city.jpg 1400w,
+              ../assets/jodhpur/high/city.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/city.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/city.jpg"
+            alt="The 'Blue City' of Jodhpur."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/birds.jpg 1400w, ../assets/jodhpur/high/birds.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/birds.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/birds.jpg" alt="Birds on line during sunset.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/street_light.jpg 1400w,
+              ../assets/jodhpur/high/street_light.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/street_light.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/street_light.jpg"
+            alt="Evening street scene."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/bike.jpg 1400w, ../assets/jodhpur/high/bike.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/bike.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/bike.jpg" alt="Bike leaning against weathered wall.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_wall.jpg 1400w,
+              ../assets/jodhpur/high/fort_wall.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_wall.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_wall.jpg"
+            alt="Afternoon light hitting inner-walls of fort."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort.jpg 1400w, ../assets/jodhpur/high/fort.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort.jpg" alt="Jodhpur Fort.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_windows.jpg 1400w,
+              ../assets/jodhpur/high/fort_windows.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_windows.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_windows.jpg"
+            alt="Diagonal light on fort wall."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/fort_night.jpg 1400w, ../assets/jodhpur/high/fort_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/fort_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/fort_night.jpg" alt="Jodhpur fort at night.">
-			</picture> 
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/birds.jpg 1400w,
+              ../assets/jodhpur/high/birds.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/birds.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/birds.jpg"
+            alt="Birds on line during sunset."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/umaid_palace.jpg 1400w, ../assets/jodhpur/high/umaid_palace.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/umaid_palace.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/umaid_palace.jpg" alt="Umaid Palace.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/bike.jpg 1400w,
+              ../assets/jodhpur/high/bike.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/bike.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/bike.jpg"
+            alt="Bike leaning against weathered wall."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/dog_car.jpg 1400w, ../assets/jodhpur/high/dog_car.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/dog_car.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/dog_car.jpg" alt="Dog asleep on a car.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/cooking.jpg 1400w, ../assets/jodhpur/high/cooking.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/cooking.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/cooking.jpg" alt="Morning cooking.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort.jpg 1400w,
+              ../assets/jodhpur/high/fort.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort.jpg"
+            media="(min-width: 550px)"
+          />
+          <img src="../assets/jodhpur/mobile/fort.jpg" alt="Jodhpur Fort." />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/girl.jpg 1400w, ../assets/jodhpur/high/girl.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/girl.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/girl.jpg" alt="Little girl standing in alley.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/panning.jpg 1400w, ../assets/jodhpur/high/panning.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/panning.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/panning.jpg" alt="Panning shot of tuk-tuk.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/jodhpur/desktop/blue_walls.jpg 1400w, ../assets/jodhpur/high/blue_walls.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/jodhpur/tablet/blue_walls.jpg" media="(min-width: 550px)">
-				<img src="../assets/jodhpur/mobile/blue_walls.jpg" alt="Blue street in Jodhpur.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/fort_night.jpg 1400w,
+              ../assets/jodhpur/high/fort_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/fort_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/fort_night.jpg"
+            alt="Jodhpur fort at night."
+          />
+        </picture>
 
-		
-		</div>
-	</div>
-	<div class="carousel-nav">
-		<img srcset="../assets/jodhpur/slider-nav/small/clocktower_night.jpg 240w, ../assets/jodhpur/slider-nav/big/clocktower_night.jpg 315w" alt="Clocktower at night.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_pano.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_pano.jpg 315w" alt="Panorama of Jodhpur Fort.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_walls.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_walls.jpg 315w" alt="Looking up at 4 walls of Jodhpur Fort.">
-		<img srcset="../assets/jodhpur/slider-nav/small/city_sunset_close.jpg 240w, ../assets/jodhpur/slider-nav/big/city_sunset_close.jpg 315w" alt="Telephoto view of 'Blue City'.">
-		<img srcset="../assets/jodhpur/slider-nav/small/jaswant.jpg 240w, ../assets/jodhpur/slider-nav/big/jaswant.jpg 315w" alt="Jaswant Thada.">
-		<img srcset="../assets/jodhpur/slider-nav/small/jaswant_hall.jpg 240w, ../assets/jodhpur/slider-nav/big/jaswant_hall.jpg 315w" alt="Hall of Jaswant Thada.">
-		<img srcset="../assets/jodhpur/slider-nav/small/kids_running.jpg 240w, ../assets/jodhpur/slider-nav/big/kids_running.jpg 315w" alt="Street scene.">
-		<img srcset="../assets/jodhpur/slider-nav/small/statue.jpg 240w, ../assets/jodhpur/slider-nav/big/statue.jpg 315w" alt="Rao Jodha Ji Statue.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_morning.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_morning.jpg 315w" alt="Morning light hitting fort.">
-		<img srcset="../assets/jodhpur/slider-nav/small/morning_buildings.jpg 240w, ../assets/jodhpur/slider-nav/big/morning_buildings.jpg 315w" alt="Morning lights hitting buildings.">
-		<img srcset="../assets/jodhpur/slider-nav/small/city.jpg 240w, ../assets/jodhpur/slider-nav/big/city.jpg 315w" alt="The 'Blue City' of Jodhpur.">
-		<img srcset="../assets/jodhpur/slider-nav/small/street_light.jpg 240w, ../assets/jodhpur/slider-nav/big/street_light.jpg 315w" alt="Evening street scene.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_wall.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_wall.jpg 315w" alt="Afternoon light hitting inner-walls of fort.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_windows.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_windows.jpg 315w" alt="Diagonal light on fort wall.">
-		<img srcset="../assets/jodhpur/slider-nav/small/birds.jpg 240w, ../assets/jodhpur/slider-nav/big/birds.jpg 315w" alt="Birds on line during sunset.">
-		<img srcset="../assets/jodhpur/slider-nav/small/bike.jpg 240w, ../assets/jodhpur/slider-nav/big/bike.jpg 315w" alt="Bike leaning against weathered wall.">	
-		<img srcset="../assets/jodhpur/slider-nav/small/fort.jpg 240w, ../assets/jodhpur/slider-nav/big/fort.jpg 315w" alt="Jodhpur Fort.">
-		<img srcset="../assets/jodhpur/slider-nav/small/fort_night.jpg 240w, ../assets/jodhpur/slider-nav/big/fort_night.jpg 315w" alt="Jodhpur fort at night.">
-		<img srcset="../assets/jodhpur/slider-nav/small/umaid_palace.jpg 240w, ../assets/jodhpur/slider-nav/big/umaid_palace.jpg 315w" alt="Umaid Palace.">
-		<img srcset="../assets/jodhpur/slider-nav/small/dog_car.jpg 240w, ../assets/jodhpur/slider-nav/big/dog_car.jpg 315w" alt="Dog asleep on a car.">
-		<img srcset="../assets/jodhpur/slider-nav/small/cooking.jpg 240w, ../assets/jodhpur/slider-nav/big/cooking.jpg 315w" alt="Morning cooking.">
-		<img srcset="../assets/jodhpur/slider-nav/small/girl.jpg 240w, ../assets/jodhpur/slider-nav/big/girl.jpg 315w" alt="Little girl standing in alley.">
-		<img srcset="../assets/jodhpur/slider-nav/small/panning.jpg 240w, ../assets/jodhpur/slider-nav/big/panning.jpg 315w" alt="Panning shot of tuk-tuk.">
-		<img srcset="../assets/jodhpur/slider-nav/small/blue_walls.jpg 240w, ../assets/jodhpur/slider-nav/big/blue_walls.jpg 315w" alt="Blue street in Jodhpur.">
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/umaid_palace.jpg 1400w,
+              ../assets/jodhpur/high/umaid_palace.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/umaid_palace.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/umaid_palace.jpg"
+            alt="Umaid Palace."
+          />
+        </picture>
 
-	</div>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="../scripts/galleries.js"></script>
-</body>
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/dog_car.jpg 1400w,
+              ../assets/jodhpur/high/dog_car.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/dog_car.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/dog_car.jpg"
+            alt="Dog asleep on a car."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/cooking.jpg 1400w,
+              ../assets/jodhpur/high/cooking.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/cooking.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/cooking.jpg"
+            alt="Morning cooking."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/girl.jpg 1400w,
+              ../assets/jodhpur/high/girl.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/girl.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/girl.jpg"
+            alt="Little girl standing in alley."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/panning.jpg 1400w,
+              ../assets/jodhpur/high/panning.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/panning.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/panning.jpg"
+            alt="Panning shot of tuk-tuk."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/jodhpur/desktop/blue_walls.jpg 1400w,
+              ../assets/jodhpur/high/blue_walls.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/jodhpur/tablet/blue_walls.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/jodhpur/mobile/blue_walls.jpg"
+            alt="Blue street in Jodhpur."
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/clocktower_night.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/clocktower_night.jpg   315w
+        "
+        alt="Clocktower at night."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_pano.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_pano.jpg   315w
+        "
+        alt="Panorama of Jodhpur Fort."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_walls.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_walls.jpg   315w
+        "
+        alt="Looking up at 4 walls of Jodhpur Fort."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/city_sunset_close.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/city_sunset_close.jpg   315w
+        "
+        alt="Telephoto view of 'Blue City'."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/jaswant.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/jaswant.jpg   315w
+        "
+        alt="Jaswant Thada."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/jaswant_hall.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/jaswant_hall.jpg   315w
+        "
+        alt="Hall of Jaswant Thada."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/kids_running.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/kids_running.jpg   315w
+        "
+        alt="Street scene."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/statue.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/statue.jpg   315w
+        "
+        alt="Rao Jodha Ji Statue."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_morning.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_morning.jpg   315w
+        "
+        alt="Morning light hitting fort."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/morning_buildings.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/morning_buildings.jpg   315w
+        "
+        alt="Morning lights hitting buildings."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/city.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/city.jpg   315w
+        "
+        alt="The 'Blue City' of Jodhpur."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/street_light.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/street_light.jpg   315w
+        "
+        alt="Evening street scene."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_wall.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_wall.jpg   315w
+        "
+        alt="Afternoon light hitting inner-walls of fort."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_windows.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_windows.jpg   315w
+        "
+        alt="Diagonal light on fort wall."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/birds.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/birds.jpg   315w
+        "
+        alt="Birds on line during sunset."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/bike.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/bike.jpg   315w
+        "
+        alt="Bike leaning against weathered wall."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort.jpg   315w
+        "
+        alt="Jodhpur Fort."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/fort_night.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/fort_night.jpg   315w
+        "
+        alt="Jodhpur fort at night."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/umaid_palace.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/umaid_palace.jpg   315w
+        "
+        alt="Umaid Palace."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/dog_car.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/dog_car.jpg   315w
+        "
+        alt="Dog asleep on a car."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/cooking.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/cooking.jpg   315w
+        "
+        alt="Morning cooking."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/girl.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/girl.jpg   315w
+        "
+        alt="Little girl standing in alley."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/panning.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/panning.jpg   315w
+        "
+        alt="Panning shot of tuk-tuk."
+      />
+      <img
+        srcset="
+          ../assets/jodhpur/slider-nav/small/blue_walls.jpg 240w,
+          ../assets/jodhpur/slider-nav/big/blue_walls.jpg   315w
+        "
+        alt="Blue street in Jodhpur."
+      />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../scripts/galleries.js"></script>
+  </body>
 </html>

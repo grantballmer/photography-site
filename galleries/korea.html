@@ -1,213 +1,626 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Korea Gallery</title>
+    <meta
+      name="description"
+      content="Grant Ballmer Photography page for South Korea"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Korea Gallery</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="icon" type="image/png" href="../assets/icon/camera-icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
-</head>
+    <link rel="icon" type="image/png" href="../assets/icon/camera-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css" />
+  </head>
 
-<body>
-	
-	<nav>
-		<h1><a href="../">Grant Ballmer<br><span>Photography</span></a></h1>
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<ul>
-			<li><a href="../about/">About</a></li>
-			<li><a href="../#mapid">Map</a></li>
-			<li><a href="../#grid">Places</a></li>
-			<li><a href="https://www.instagram.com/grantballmer/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		</ul>	
-	</nav>
-	
-	<div class="loader">
-		<div class="loader__rotate"></div>
-		<div class="loader__text">loading...</div>
-	</div>
-	
-	<div class="wrapper">
-		<div class="arrows arrows__left">
-			<i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
-		</div>
-		<div class="arrows arrows__right">
-			<i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
-		</div>
-		<div class="carousel">
+  <body>
+    <nav>
+      <h1>
+        <a href="../">Grant Ballmer<br /><span>Photography</span></a>
+      </h1>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../#mapid">Map</a></li>
+        <li><a href="../#grid">Places</a></li>
+        <li>
+          <a href="https://www.instagram.com/grantballmer/" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/nami.jpg 1400w, ../assets/korea/high/nami.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/nami.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/nami.jpg" alt="Ginkgo Trees.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/boat.jpg 1400w, ../assets/korea/high/boat.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/boat.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/boat.jpg" alt="Boat at low-tide at Seonyudo.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/dodamsambong.jpg 1400w, ../assets/korea/high/dodamsambong.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/dodamsambong.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/dodamsambong.jpg" alt="Dodamsambong peaks.">
-			</picture>
+    <div class="loader">
+      <div class="loader__rotate"></div>
+      <div class="loader__text">loading...</div>
+    </div>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/bridge.jpg 1400w, ../assets/korea/high/bridge.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/bridge.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/bridge.jpg" alt="Reflection of LED lit bridge.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/blue_layers.jpg 1400w, ../assets/korea/high/blue_layers.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/blue_layers.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/blue_layers.jpg" alt="Layers of blue mountains.">
-			</picture>
+    <div class="wrapper">
+      <div class="arrows arrows__left">
+        <i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrows arrows__right">
+        <i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
+      </div>
+      <div class="carousel">
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/nami.jpg 1400w,
+              ../assets/korea/high/nami.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/nami.jpg"
+            media="(min-width: 550px)"
+          />
+          <img src="../assets/korea/mobile/nami.jpg" alt="Ginkgo Trees." />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/samgwangsa.jpg 1400w, ../assets/korea/high/samgwangsa.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/samgwangsa.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/samgwangsa.jpg" alt="Lanterns at Samgwangsa Temple.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/boat.jpg 1400w,
+              ../assets/korea/high/boat.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/boat.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/boat.jpg"
+            alt="Boat at low-tide at Seonyudo."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/paragliders.jpg 1400w, ../assets/korea/high/paragliders.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/paragliders.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/paragliders.jpg" alt="Three paragliders taking off.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/dodamsambong.jpg 1400w,
+              ../assets/korea/high/dodamsambong.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/dodamsambong.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/dodamsambong.jpg"
+            alt="Dodamsambong peaks."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/pink_lanterns.jpg 1400w, ../assets/korea/high/pink_lanterns.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/pink_lanterns.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/pink_lanterns.jpg" alt="Pink lanterns at Samgwangsa Temple.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/bridge.jpg 1400w,
+              ../assets/korea/high/bridge.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/bridge.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/bridge.jpg"
+            alt="Reflection of LED lit bridge."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sobaeksan_pano.jpg 1400w, ../assets/korea/high/sobaeksan_pano.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sobaeksan_pano.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sobaeksan_pano.jpg" alt="Panorama from Sobaeksan Mountain.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/blue_layers.jpg 1400w,
+              ../assets/korea/high/blue_layers.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/blue_layers.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/blue_layers.jpg"
+            alt="Layers of blue mountains."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sobaeksan_layers.jpg 1400w, ../assets/korea/high/sobaeksan_layers.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sobaeksan_layers.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sobaeksan_layers.jpg" alt="Blue layers of mountains.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/samgwangsa.jpg 1400w,
+              ../assets/korea/high/samgwangsa.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/samgwangsa.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/samgwangsa.jpg"
+            alt="Lanterns at Samgwangsa Temple."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sunset_city.jpg 1400w, ../assets/korea/high/sunset_city.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sunset_city.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sunset_city.jpg" alt="Sun setting over Danyang.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/lanterns.jpg 1400w, ../assets/korea/high/lanterns.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/lanterns.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/lanterns.jpg" alt="Rows of lanterns.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/paragliders.jpg 1400w,
+              ../assets/korea/high/paragliders.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/paragliders.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/paragliders.jpg"
+            alt="Three paragliders taking off."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/nami_lantern.jpg 1400w, ../assets/korea/high/nami_lantern.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/nami_lantern.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/nami_lantern.jpg" alt="Lantern hanging.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/pink_lanterns.jpg 1400w,
+              ../assets/korea/high/pink_lanterns.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/pink_lanterns.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/pink_lanterns.jpg"
+            alt="Pink lanterns at Samgwangsa Temple."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/forest_lanterns.jpg 1400w, ../assets/korea/high/forest_lanterns.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/forest_lanterns.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/forest_lanterns.jpg" alt="White light lanterns in forest.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sobaeksan_pano.jpg 1400w,
+              ../assets/korea/high/sobaeksan_pano.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sobaeksan_pano.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sobaeksan_pano.jpg"
+            alt="Panorama from Sobaeksan Mountain."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/blue_layers_2.jpg 1400w, ../assets/korea/high/blue_layers_2.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/blue_layers_2.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/blue_layers_2.jpg" alt="Layers of mountains.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sobaeksan_layers.jpg 1400w,
+              ../assets/korea/high/sobaeksan_layers.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sobaeksan_layers.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sobaeksan_layers.jpg"
+            alt="Blue layers of mountains."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/seonyudo.jpg 1400w, ../assets/korea/high/seonyudo.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/seonyudo.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/seonyudo.jpg" alt="Seonyudo Island.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sunset_city.jpg 1400w,
+              ../assets/korea/high/sunset_city.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sunset_city.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sunset_city.jpg"
+            alt="Sun setting over Danyang."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sunset_layers.jpg 1400w, ../assets/korea/high/sunset_layers.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sunset_layers.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sunset_layers.jpg" alt="Sunset from Danyang Observatory.">
-			</picture> 
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/lanterns.jpg 1400w,
+              ../assets/korea/high/lanterns.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/lanterns.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/lanterns.jpg"
+            alt="Rows of lanterns."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sobaeksan_clouds.jpg 1400w, ../assets/korea/high/sobaeksan_clouds.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sobaeksan_clouds.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sobaeksan_clouds.jpg" alt="Clouds hanging over Sobaeksan.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/sobaeksan_house.jpg 1400w, ../assets/korea/high/sobaeksan_house.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sobaeksan_house.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sobaeksan_house.jpg" alt="Small building in haze.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/nami_lantern.jpg 1400w,
+              ../assets/korea/high/nami_lantern.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/nami_lantern.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/nami_lantern.jpg"
+            alt="Lantern hanging."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/korea/desktop/sobaeksan_wide.jpg 1400w, ../assets/korea/high/sobaeksan_wide.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/sobaeksan_wide.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/sobaeksan_wide.jpg" alt="Wide-angle shot from Sobaeksan.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/paraglider.jpg 1400w, ../assets/korea/high/paraglider.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/paraglider.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/paraglider.jpg" alt="Paraglider in Danyang.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/korea/desktop/blue_red_lanterns.jpg 1400w, ../assets/korea/high/blue_red_lanterns.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/korea/tablet/blue_red_lanterns.jpg" media="(min-width: 550px)">
-				<img src="../assets/korea/mobile/blue_red_lanterns.jpg" alt="Blue and red lanterns.">
-			</picture>
-		
-		</div>
-	</div>
-	<div class="carousel-nav">
-		<img srcset="../assets/korea/slider-nav/small/nami.jpg 240w, ../assets/korea/slider-nav/big/nami.jpg 315w" alt="Ginkgo Trees.">
-		<img srcset="../assets/korea/slider-nav/small/boat.jpg 240w, ../assets/korea/slider-nav/big/boat.jpg 315w" alt="Boat at low-tide at Seonyudo.">
-		<img srcset="../assets/korea/slider-nav/small/dodamsambong.jpg 240w, ../assets/korea/slider-nav/big/dodamsambong.jpg 315w" alt="Dodamsambong peaks.">
-		<img srcset="../assets/korea/slider-nav/small/bridge.jpg 240w, ../assets/korea/slider-nav/big/bridge.jpg 315w" alt="Reflection of LED lit bridge.">
-		<img srcset="../assets/korea/slider-nav/small/blue_layers.jpg 240w, ../assets/korea/slider-nav/big/blue_layers.jpg 315w" alt="Layers of blue mountains.">
-		<img srcset="../assets/korea/slider-nav/small/samgwangsa.jpg 240w, ../assets/korea/slider-nav/big/samgwangsa.jpg 315w" alt="Lanterns at Samgwangsa Temple.">
-		<img srcset="../assets/korea/slider-nav/small/paragliders.jpg 240w, ../assets/korea/slider-nav/big/paragliders.jpg 315w" alt="Three paragliders taking off.">
-		<img srcset="../assets/korea/slider-nav/small/pink_lanterns.jpg 240w, ../assets/korea/slider-nav/big/pink_lanterns.jpg 315w" alt="Pink lanterns at Samgwangsa Temple.">
-		<img srcset="../assets/korea/slider-nav/small/sobaeksan_pano.jpg 240w, ../assets/korea/slider-nav/big/sobaeksan_pano.jpg 315w" alt="Panorama from Sobaeksan Mountain.">
-		<img srcset="../assets/korea/slider-nav/small/sobaeksan_layers.jpg 240w, ../assets/korea/slider-nav/big/sobaeksan_layers.jpg 315w" alt="Blue layers of mountains.">
-		<img srcset="../assets/korea/slider-nav/small/sunset_city.jpg 240w, ../assets/korea/slider-nav/big/sunset_city.jpg 315w" alt="Sun setting over Danyang.">
-		<img srcset="../assets/korea/slider-nav/small/lanterns.jpg 240w, ../assets/korea/slider-nav/big/lanterns.jpg 315w" alt="Rows of lanterns.">
-		<img srcset="../assets/korea/slider-nav/small/nami_lantern.jpg 240w, ../assets/korea/slider-nav/big/nami_lantern.jpg 315w" alt="Lantern hanging.">
-		<img srcset="../assets/korea/slider-nav/small/forest_lanterns.jpg 240w, ../assets/korea/slider-nav/big/forest_lanterns.jpg 315w" alt="White light lanterns in forest.">
-		<img srcset="../assets/korea/slider-nav/small/blue_layers_2.jpg 240w, ../assets/korea/slider-nav/big/blue_layers_2.jpg 315w" alt="Layers of mountains.">	
-		<img srcset="../assets/korea/slider-nav/small/seonyudo.jpg 240w, ../assets/korea/slider-nav/big/seonyudo.jpg 315w" alt="Seonyudo Island.">
-		<img srcset="../assets/korea/slider-nav/small/sunset_layers.jpg 240w, ../assets/korea/slider-nav/big/sunset_layers.jpg 315w" alt="Sunset from Danyang Observatory.">
-		<img srcset="../assets/korea/slider-nav/small/sobaeksan_clouds.jpg 240w, ../assets/korea/slider-nav/big/sobaeksan_clouds.jpg 315w" alt="Clouds hanging over Sobaeksan.">
-		<img srcset="../assets/korea/slider-nav/small/sobaeksan_house.jpg 240w, ../assets/korea/slider-nav/big/sobaeksan_house.jpg 315w" alt="Small building in haze.">
-		<img srcset="../assets/korea/slider-nav/small/sobaeksan_wide.jpg 240w, ../assets/korea/slider-nav/big/sobaeksan_wide.jpg 315w" alt="Wide-angle shot from Sobaeksan.">
-		<img srcset="../assets/korea/slider-nav/small/paraglider.jpg 240w, ../assets/korea/slider-nav/big/paraglider.jpg 315w" alt="Paraglider in Danyang.">
-		<img srcset="../assets/korea/slider-nav/small/blue_red_lanterns.jpg 240w, ../assets/korea/slider-nav/big/blue_red_lanterns.jpg 315w" alt="Blue and red lanterns.">
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/forest_lanterns.jpg 1400w,
+              ../assets/korea/high/forest_lanterns.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/forest_lanterns.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/forest_lanterns.jpg"
+            alt="White light lanterns in forest."
+          />
+        </picture>
 
-	</div>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="../scripts/galleries.js"></script>
-</body>
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/blue_layers_2.jpg 1400w,
+              ../assets/korea/high/blue_layers_2.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/blue_layers_2.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/blue_layers_2.jpg"
+            alt="Layers of mountains."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/seonyudo.jpg 1400w,
+              ../assets/korea/high/seonyudo.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/seonyudo.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/seonyudo.jpg"
+            alt="Seonyudo Island."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sunset_layers.jpg 1400w,
+              ../assets/korea/high/sunset_layers.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sunset_layers.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sunset_layers.jpg"
+            alt="Sunset from Danyang Observatory."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sobaeksan_clouds.jpg 1400w,
+              ../assets/korea/high/sobaeksan_clouds.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sobaeksan_clouds.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sobaeksan_clouds.jpg"
+            alt="Clouds hanging over Sobaeksan."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sobaeksan_house.jpg 1400w,
+              ../assets/korea/high/sobaeksan_house.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sobaeksan_house.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sobaeksan_house.jpg"
+            alt="Small building in haze."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/sobaeksan_wide.jpg 1400w,
+              ../assets/korea/high/sobaeksan_wide.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/sobaeksan_wide.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/sobaeksan_wide.jpg"
+            alt="Wide-angle shot from Sobaeksan."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/paraglider.jpg 1400w,
+              ../assets/korea/high/paraglider.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/paraglider.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/paraglider.jpg"
+            alt="Paraglider in Danyang."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/korea/desktop/blue_red_lanterns.jpg 1400w,
+              ../assets/korea/high/blue_red_lanterns.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/korea/tablet/blue_red_lanterns.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/korea/mobile/blue_red_lanterns.jpg"
+            alt="Blue and red lanterns."
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/nami.jpg 240w,
+          ../assets/korea/slider-nav/big/nami.jpg   315w
+        "
+        alt="Ginkgo Trees."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/boat.jpg 240w,
+          ../assets/korea/slider-nav/big/boat.jpg   315w
+        "
+        alt="Boat at low-tide at Seonyudo."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/dodamsambong.jpg 240w,
+          ../assets/korea/slider-nav/big/dodamsambong.jpg   315w
+        "
+        alt="Dodamsambong peaks."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/bridge.jpg 240w,
+          ../assets/korea/slider-nav/big/bridge.jpg   315w
+        "
+        alt="Reflection of LED lit bridge."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/blue_layers.jpg 240w,
+          ../assets/korea/slider-nav/big/blue_layers.jpg   315w
+        "
+        alt="Layers of blue mountains."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/samgwangsa.jpg 240w,
+          ../assets/korea/slider-nav/big/samgwangsa.jpg   315w
+        "
+        alt="Lanterns at Samgwangsa Temple."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/paragliders.jpg 240w,
+          ../assets/korea/slider-nav/big/paragliders.jpg   315w
+        "
+        alt="Three paragliders taking off."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/pink_lanterns.jpg 240w,
+          ../assets/korea/slider-nav/big/pink_lanterns.jpg   315w
+        "
+        alt="Pink lanterns at Samgwangsa Temple."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sobaeksan_pano.jpg 240w,
+          ../assets/korea/slider-nav/big/sobaeksan_pano.jpg   315w
+        "
+        alt="Panorama from Sobaeksan Mountain."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sobaeksan_layers.jpg 240w,
+          ../assets/korea/slider-nav/big/sobaeksan_layers.jpg   315w
+        "
+        alt="Blue layers of mountains."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sunset_city.jpg 240w,
+          ../assets/korea/slider-nav/big/sunset_city.jpg   315w
+        "
+        alt="Sun setting over Danyang."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/lanterns.jpg 240w,
+          ../assets/korea/slider-nav/big/lanterns.jpg   315w
+        "
+        alt="Rows of lanterns."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/nami_lantern.jpg 240w,
+          ../assets/korea/slider-nav/big/nami_lantern.jpg   315w
+        "
+        alt="Lantern hanging."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/forest_lanterns.jpg 240w,
+          ../assets/korea/slider-nav/big/forest_lanterns.jpg   315w
+        "
+        alt="White light lanterns in forest."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/blue_layers_2.jpg 240w,
+          ../assets/korea/slider-nav/big/blue_layers_2.jpg   315w
+        "
+        alt="Layers of mountains."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/seonyudo.jpg 240w,
+          ../assets/korea/slider-nav/big/seonyudo.jpg   315w
+        "
+        alt="Seonyudo Island."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sunset_layers.jpg 240w,
+          ../assets/korea/slider-nav/big/sunset_layers.jpg   315w
+        "
+        alt="Sunset from Danyang Observatory."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sobaeksan_clouds.jpg 240w,
+          ../assets/korea/slider-nav/big/sobaeksan_clouds.jpg   315w
+        "
+        alt="Clouds hanging over Sobaeksan."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sobaeksan_house.jpg 240w,
+          ../assets/korea/slider-nav/big/sobaeksan_house.jpg   315w
+        "
+        alt="Small building in haze."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/sobaeksan_wide.jpg 240w,
+          ../assets/korea/slider-nav/big/sobaeksan_wide.jpg   315w
+        "
+        alt="Wide-angle shot from Sobaeksan."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/paraglider.jpg 240w,
+          ../assets/korea/slider-nav/big/paraglider.jpg   315w
+        "
+        alt="Paraglider in Danyang."
+      />
+      <img
+        srcset="
+          ../assets/korea/slider-nav/small/blue_red_lanterns.jpg 240w,
+          ../assets/korea/slider-nav/big/blue_red_lanterns.jpg   315w
+        "
+        alt="Blue and red lanterns."
+      />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../scripts/galleries.js"></script>
+  </body>
 </html>

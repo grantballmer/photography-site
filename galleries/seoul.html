@@ -1,221 +1,656 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Seoul Gallery</title>
+    <meta
+      name="description"
+      content="Grant Ballmer Photography page for Seoul, South Korea"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Seoul Gallery</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="icon" type="image/png" href="../assets/icon/camera-icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
-</head>
+    <link rel="icon" type="image/png" href="../assets/icon/camera-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:medium,semi-bold,bold"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css" />
+  </head>
 
-<body>
-	
-	<nav>
-		<h1><a href="../">Grant Ballmer<br><span>Photography</span></a></h1>
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<ul>
-			<li><a href="../about/">About</a></li>
-			<li><a href="../#mapid">Map</a></li>
-			<li><a href="../#grid">Places</a></li>
-			<li><a href="https://www.instagram.com/grantballmer/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		</ul>	
-	</nav>
-	
-	<div class="loader">
-		<div class="loader__rotate"></div>
-		<div class="loader__text">loading...</div>
-	</div>
-	
-	<div class="wrapper">
-		<div class="arrows arrows__left">
-			<i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
-		</div>
-		<div class="arrows arrows__right">
-			<i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
-		</div>
-		<div class="carousel">
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/seoul_night.jpg 1250w, ../assets/seoul/high/seoul_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/seoul_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/seoul_night.jpg" alt="Seoul cityscape at night.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/namsan_night.jpg 1400w, ../assets/seoul/high/namsan_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/namsan_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/namsan_night.jpg" alt="Namsan Tower and Seoul city at night.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/hanwha_sunset.jpg 1400w, ../assets/seoul/high/hanwha_sunset.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/hanwha_sunset.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/hanwha_sunset.jpg" alt="Seoul at sunset.">
-			</picture>
+  <body>
+    <nav>
+      <h1>
+        <a href="../">Grant Ballmer<br /><span>Photography</span></a>
+      </h1>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../#mapid">Map</a></li>
+        <li><a href="../#grid">Places</a></li>
+        <li>
+          <a href="https://www.instagram.com/grantballmer/" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeongbokgung.jpg 1250w, ../assets/seoul/high/gyeongbokgung.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeongbokgung.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeongbokgung.jpg" alt="seoul temple lit up at night.">
-			</picture>
+    <div class="loader">
+      <div class="loader__rotate"></div>
+      <div class="loader__text">loading...</div>
+    </div>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/hanbok.jpg 1250w, ../assets/seoul/high/hanbok.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/hanbok.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/hanbok.jpg" alt="Little girl eating corn">
-			</picture>
+    <div class="wrapper">
+      <div class="arrows arrows__left">
+        <i class="fa fa-chevron fa-chevron-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrows arrows__right">
+        <i class="fa fa-chevron fa-chevron-right" aria-hidden="true"></i>
+      </div>
+      <div class="carousel">
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/seoul_night.jpg 1250w,
+              ../assets/seoul/high/seoul_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/seoul_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/seoul_night.jpg"
+            alt="Seoul cityscape at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/drummers_back.jpg 1250w, ../assets/seoul/high/drummers_back.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/drummers_back.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/drummers_back.jpg" alt="seoul temple">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/namsan_night.jpg 1400w,
+              ../assets/seoul/high/namsan_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/namsan_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/namsan_night.jpg"
+            alt="Namsan Tower and Seoul city at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/drummers_front.jpg 1250w, ../assets/seoul/high/drummers_front.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/drummers_front.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/drummers_front.jpg" alt="Row of 5 temples at different depths.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/sunset.jpg 1400w, ../assets/seoul/high/sunset.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/sunset.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/sunset.jpg" alt="Sun setting on Seoul.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/hanwha_sunset.jpg 1400w,
+              ../assets/seoul/high/hanwha_sunset.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/hanwha_sunset.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/hanwha_sunset.jpg"
+            alt="Seoul at sunset."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/seoul_night_2.jpg 1400w, ../assets/seoul/high/seoul_night_2.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/seoul_night_2.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/seoul_night_2.jpg" alt="Seoul cityscape at night.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeong_longexp.jpg 1250w, ../assets/seoul/high/gyeong_longexp.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeong_longexp.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeong_longexp.jpg" alt="Assortment of knives on display at market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeongbokgung.jpg 1250w,
+              ../assets/seoul/high/gyeongbokgung.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeongbokgung.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeongbokgung.jpg"
+            alt="seoul temple lit up at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeongbok_lake.jpg 1250w, ../assets/seoul/high/gyeongbok_lake.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeongbok_lake.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeongbok_lake.jpg" alt="Farmer plowing field in front of temples.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/hanbok.jpg 1250w,
+              ../assets/seoul/high/hanbok.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/hanbok.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/hanbok.jpg"
+            alt="Little girl eating corn"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/namsan_lotte.jpg 1250w, ../assets/seoul/high/namsan_lotte.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/namsan_lotte.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/namsan_lotte.jpg" alt="Namsan Tower with Lotte World Tower in background.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/drummers_back.jpg 1250w,
+              ../assets/seoul/high/drummers_back.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/drummers_back.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/drummers_back.jpg"
+            alt="seoul temple"
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeong_longexp2.jpg 1250w, ../assets/seoul/high/gyeong_longexp2.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeong_longexp2.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeong_longexp2.jpg" alt="Row of 5 temples at different depths.">
-			</picture>
-			
-			<picture>
-				<source srcset="../assets/seoul/desktop/inwang.jpg 1400w, ../assets/seoul/high/inwang.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/inwang.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/inwang.jpg" alt="Inwang mountain and apartments.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/drummers_front.jpg 1250w,
+              ../assets/seoul/high/drummers_front.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/drummers_front.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/drummers_front.jpg"
+            alt="Row of 5 temples at different depths."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/inwang_mt.jpg 1250w, ../assets/seoul/high/inwang_mt.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/inwang_mt.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/inwang_mt.jpg" alt="Small pagoda at base of Mt. Inwang.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/sunset.jpg 1400w,
+              ../assets/seoul/high/sunset.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/sunset.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/sunset.jpg"
+            alt="Sun setting on Seoul."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/drummer.jpg 1250w, ../assets/seoul/high/drummer.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/drummer.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/drummer.jpg" alt="Woman selling books at night in market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/seoul_night_2.jpg 1400w,
+              ../assets/seoul/high/seoul_night_2.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/seoul_night_2.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/seoul_night_2.jpg"
+            alt="Seoul cityscape at night."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/night_temple.jpg 1250w, ../assets/seoul/high/night_temple.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/night_temple.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/night_temple.jpg" alt="Farmer plowing in field of foreground, with temple in back.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeong_longexp.jpg 1250w,
+              ../assets/seoul/high/gyeong_longexp.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeong_longexp.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeong_longexp.jpg"
+            alt="Assortment of knives on display at market."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/namsan_lotte_night.jpg 1250w, ../assets/seoul/high/namsan_lotte_night.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/namsan_lotte_night.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/namsan_lotte_night.jpg" alt="Seoul Night cityscape.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeongbok_lake.jpg 1250w,
+              ../assets/seoul/high/gyeongbok_lake.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeongbok_lake.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeongbok_lake.jpg"
+            alt="Farmer plowing field in front of temples."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeong_above.jpg 1250w, ../assets/seoul/high/gyeong_above.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeong_above.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeong_above.jpg" alt="Group of people enjoying a meal at the market in seoul.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/namsan_lotte.jpg 1250w,
+              ../assets/seoul/high/namsan_lotte.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/namsan_lotte.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/namsan_lotte.jpg"
+            alt="Namsan Tower with Lotte World Tower in background."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/namdaemun.jpg 1250w, ../assets/seoul/high/namdaemun.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/namdaemun.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/namdaemun.jpg" alt="Woman chopping up meat in seoul market.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeong_longexp2.jpg 1250w,
+              ../assets/seoul/high/gyeong_longexp2.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeong_longexp2.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeong_longexp2.jpg"
+            alt="Row of 5 temples at different depths."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/inwang_seoul.jpg 1250w, ../assets/seoul/high/inwang_seoul.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/inwang_seoul.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/inwang_seoul.jpg" alt="Wagon coming toward camera along dirt path.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/inwang.jpg 1400w,
+              ../assets/seoul/high/inwang.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/inwang.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/inwang.jpg"
+            alt="Inwang mountain and apartments."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/cherry_gyeong.jpg 1250w, ../assets/seoul/high/cherry_gyeong.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/cherry_gyeong.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/cherry_gyeong.jpg" alt="Man carrying basket of tall corn stalks on shoulders.">
-			</picture>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/inwang_mt.jpg 1250w,
+              ../assets/seoul/high/inwang_mt.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/inwang_mt.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/inwang_mt.jpg"
+            alt="Small pagoda at base of Mt. Inwang."
+          />
+        </picture>
 
-			<picture>
-				<source srcset="../assets/seoul/desktop/gyeong_tele.jpg 1250w, ../assets/seoul/high/gyeong_tele.jpg 3400w" media="(min-width: 1100px)">
-				<source srcset="../assets/seoul/tablet/gyeong_tele.jpg" media="(min-width: 550px)">
-				<img src="../assets/seoul/mobile/gyeong_tele.jpg" alt="Four temples in seoul">
-			</picture> 
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/drummer.jpg 1250w,
+              ../assets/seoul/high/drummer.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/drummer.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/drummer.jpg"
+            alt="Woman selling books at night in market."
+          />
+        </picture>
 
-		</div>
-	</div>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/night_temple.jpg 1250w,
+              ../assets/seoul/high/night_temple.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/night_temple.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/night_temple.jpg"
+            alt="Farmer plowing in field of foreground, with temple in back."
+          />
+        </picture>
 
-	<div class="carousel-nav">
-		<img srcset="../assets/seoul/slider-nav/small/seoul_night.jpg 240w, ../assets/seoul/slider-nav/big/seoul_night.jpg 315w" alt="Seoul cityscape at night.">
-		<img srcset="../assets/seoul/slider-nav/small/namsan_night.jpg 240w, ../assets/seoul/slider-nav/big/namsan_night.jpg 315w" alt="Namsan Tower and Seoul city at night.">
-		<img srcset="../assets/seoul/slider-nav/small/hanwha_sunset.jpg 240w, ../assets/seoul/slider-nav/big/hanwha_sunset.jpg 315w" alt="Seoul at sunset.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeongbokgung.jpg 240w, ../assets/seoul/slider-nav/big/gyeongbokgung.jpg 315w" alt="Girl eating corn">
-		<img srcset="../assets/seoul/slider-nav/small/hanbok.jpg 240w, ../assets/seoul/slider-nav/big/hanbok.jpg 315w" alt="Cooking in seoul market.">
-		<img srcset="../assets/seoul/slider-nav/small/drummers_back.jpg 240w, ../assets/seoul/slider-nav/big/drummers_back.jpg 315w" alt="seoul temple">
-		<img srcset="../assets/seoul/slider-nav/small/drummers_front.jpg 240w, ../assets/seoul/slider-nav/big/drummers_front.jpg 315w" alt="seoul temples">
-		<img srcset="../assets/seoul/slider-nav/small/sunset.jpg 240w, ../assets/seoul/slider-nav/big/sunset.jpg 315w" alt="Sun setting on Seoul.">
-		<img srcset="../assets/seoul/slider-nav/small/seoul_night_2.jpg 240w, ../assets/seoul/slider-nav/big/seoul_night_2.jpg 315w" alt="Seoul cityscape at night.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeong_longexp.jpg 240w, ../assets/seoul/slider-nav/big/gyeong_longexp.jpg 315w" alt="Assortment of knives on display at market.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeongbok_lake.jpg 240w, ../assets/seoul/slider-nav/big/gyeongbok_lake.jpg 315w" alt="Farmer plowing field in front of temples.">
-		<img srcset ="../assets/seoul/slider-nav/small/namsan_lotte.jpg 240w, ../assets/seoul/slider-nav/big/namsan_lotte.jpg 315w" alt="Namsan Tower with Lotte World Tower in background.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeong_longexp2.jpg 240w, ../assets/seoul/slider-nav/big/gyeong_longexp2.jpg 315w" alt="Row of 5 temples at different depths.">
-		<img srcset="../assets/seoul/slider-nav/small/inwang.jpg 240w, ../assets/seoul/slider-nav/big/inwang.jpg 315w" alt="Inwang mountain and apartments.">
-		<img srcset="../assets/seoul/slider-nav/small/inwang_mt.jpg 240w, ../assets/seoul/slider-nav/big/inwang_mt.jpg 315w" alt="Small pagoda at base of Mt. Inwang.">
-		<img srcset="../assets/seoul/slider-nav/small/drummer.jpg 240w, ../assets/seoul/slider-nav/big/drummer.jpg 315w" alt="Woman selling books at night in market.">
-		<img srcset="../assets/seoul/slider-nav/small/night_temple.jpg 240w, ../assets/seoul/slider-nav/big/night_temple.jpg 315w" alt="Farmer plowing in field of foreground, with temple in back.">
-		<img srcset="../assets/seoul/slider-nav/small/namsan_lotte_night.jpg 240w, ../assets/seoul/slider-nav/big/namsan_lotte_night.jpg 315w" alt="Seoul Night cityscape.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeong_above.jpg 240w, ../assets/seoul/slider-nav/big/gyeong_above.jpg 315w" alt="Group of people enjoying a meal at the market in seoul.">
-		<img srcset="../assets/seoul/slider-nav/small/namdaemun.jpg 240w, ../assets/seoul/slider-nav/big/namdaemun.jpg 315w" alt="Woman chopping up meat in seoul market.">
-		<img srcset="../assets/seoul/slider-nav/small/inwang_seoul.jpg 240w, ../assets/seoul/slider-nav/big/inwang_seoul.jpg 315w" alt="Wagon coming toward camera along dirt path.">
-		<img srcset="../assets/seoul/slider-nav/small/cherry_gyeong.jpg 240w, ../assets/seoul/slider-nav/big/cherry_gyeong.jpg 315w" alt="Man carrying basket of tall corn stalks on shoulders.">
-		<img srcset="../assets/seoul/slider-nav/small/gyeong_tele.jpg 240w, ../assets/seoul/slider-nav/big/gyeong_tele.jpg 315w" alt="Four temples in seoul.">	
-	</div>
-	
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="../scripts/galleries.js"></script>
-</body>
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/namsan_lotte_night.jpg 1250w,
+              ../assets/seoul/high/namsan_lotte_night.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/namsan_lotte_night.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/namsan_lotte_night.jpg"
+            alt="Seoul Night cityscape."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeong_above.jpg 1250w,
+              ../assets/seoul/high/gyeong_above.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeong_above.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeong_above.jpg"
+            alt="Group of people enjoying a meal at the market in seoul."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/namdaemun.jpg 1250w,
+              ../assets/seoul/high/namdaemun.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/namdaemun.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/namdaemun.jpg"
+            alt="Woman chopping up meat in seoul market."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/inwang_seoul.jpg 1250w,
+              ../assets/seoul/high/inwang_seoul.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/inwang_seoul.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/inwang_seoul.jpg"
+            alt="Wagon coming toward camera along dirt path."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/cherry_gyeong.jpg 1250w,
+              ../assets/seoul/high/cherry_gyeong.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/cherry_gyeong.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/cherry_gyeong.jpg"
+            alt="Man carrying basket of tall corn stalks on shoulders."
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="
+              ../assets/seoul/desktop/gyeong_tele.jpg 1250w,
+              ../assets/seoul/high/gyeong_tele.jpg    3400w
+            "
+            media="(min-width: 1100px)"
+          />
+          <source
+            srcset="../assets/seoul/tablet/gyeong_tele.jpg"
+            media="(min-width: 550px)"
+          />
+          <img
+            src="../assets/seoul/mobile/gyeong_tele.jpg"
+            alt="Four temples in seoul"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div class="carousel-nav">
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/seoul_night.jpg 240w,
+          ../assets/seoul/slider-nav/big/seoul_night.jpg   315w
+        "
+        alt="Seoul cityscape at night."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/namsan_night.jpg 240w,
+          ../assets/seoul/slider-nav/big/namsan_night.jpg   315w
+        "
+        alt="Namsan Tower and Seoul city at night."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/hanwha_sunset.jpg 240w,
+          ../assets/seoul/slider-nav/big/hanwha_sunset.jpg   315w
+        "
+        alt="Seoul at sunset."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeongbokgung.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeongbokgung.jpg   315w
+        "
+        alt="Girl eating corn"
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/hanbok.jpg 240w,
+          ../assets/seoul/slider-nav/big/hanbok.jpg   315w
+        "
+        alt="Cooking in seoul market."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/drummers_back.jpg 240w,
+          ../assets/seoul/slider-nav/big/drummers_back.jpg   315w
+        "
+        alt="seoul temple"
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/drummers_front.jpg 240w,
+          ../assets/seoul/slider-nav/big/drummers_front.jpg   315w
+        "
+        alt="seoul temples"
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/sunset.jpg 240w,
+          ../assets/seoul/slider-nav/big/sunset.jpg   315w
+        "
+        alt="Sun setting on Seoul."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/seoul_night_2.jpg 240w,
+          ../assets/seoul/slider-nav/big/seoul_night_2.jpg   315w
+        "
+        alt="Seoul cityscape at night."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeong_longexp.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeong_longexp.jpg   315w
+        "
+        alt="Assortment of knives on display at market."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeongbok_lake.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeongbok_lake.jpg   315w
+        "
+        alt="Farmer plowing field in front of temples."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/namsan_lotte.jpg 240w,
+          ../assets/seoul/slider-nav/big/namsan_lotte.jpg   315w
+        "
+        alt="Namsan Tower with Lotte World Tower in background."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeong_longexp2.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeong_longexp2.jpg   315w
+        "
+        alt="Row of 5 temples at different depths."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/inwang.jpg 240w,
+          ../assets/seoul/slider-nav/big/inwang.jpg   315w
+        "
+        alt="Inwang mountain and apartments."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/inwang_mt.jpg 240w,
+          ../assets/seoul/slider-nav/big/inwang_mt.jpg   315w
+        "
+        alt="Small pagoda at base of Mt. Inwang."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/drummer.jpg 240w,
+          ../assets/seoul/slider-nav/big/drummer.jpg   315w
+        "
+        alt="Woman selling books at night in market."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/night_temple.jpg 240w,
+          ../assets/seoul/slider-nav/big/night_temple.jpg   315w
+        "
+        alt="Farmer plowing in field of foreground, with temple in back."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/namsan_lotte_night.jpg 240w,
+          ../assets/seoul/slider-nav/big/namsan_lotte_night.jpg   315w
+        "
+        alt="Seoul Night cityscape."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeong_above.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeong_above.jpg   315w
+        "
+        alt="Group of people enjoying a meal at the market in seoul."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/namdaemun.jpg 240w,
+          ../assets/seoul/slider-nav/big/namdaemun.jpg   315w
+        "
+        alt="Woman chopping up meat in seoul market."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/inwang_seoul.jpg 240w,
+          ../assets/seoul/slider-nav/big/inwang_seoul.jpg   315w
+        "
+        alt="Wagon coming toward camera along dirt path."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/cherry_gyeong.jpg 240w,
+          ../assets/seoul/slider-nav/big/cherry_gyeong.jpg   315w
+        "
+        alt="Man carrying basket of tall corn stalks on shoulders."
+      />
+      <img
+        srcset="
+          ../assets/seoul/slider-nav/small/gyeong_tele.jpg 240w,
+          ../assets/seoul/slider-nav/big/gyeong_tele.jpg   315w
+        "
+        alt="Four temples in seoul."
+      />
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../scripts/galleries.js"></script>
+  </body>
 </html>
